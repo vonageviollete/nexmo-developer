@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nexmo Developer</title>
+
+
+
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("abc123");
+      analytics.page();
+      }}();
+    </script>
+
+
+
+
+  <link rel="stylesheet" media="all" href="/assets/application-46768d12c9e58a87299d67f91ed2687e5ddb110ee11b80d488e44d9d0ed101bf.css" />
+  <script src="/assets/application-86729a2cd807fb8af29949b95c5d1a4fb2ad8ea9dae3870ac52a4f3dae2387f6.js" data-turbolinks-track="reload"></script>
+
+
+
+  <script src="/packs-test/application-8006671cb63b3856dd3b.js" defer="defer"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+    <meta name="robots" content="noindex,nofollow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Nexmo Developer">
+  <meta name="application-name" content="Nexmo Developer">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:url" content="http://www.example.com/api/sms" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Nexmo Developer" />
+
+  <meta property="og:image" content="http://www.example.com/assets/images/nexmo-developer-card.png" />
+  <meta property="og:image:width" content="835" />
+  <meta property="og:image:height" content="437" />
+
+    <meta property="og:description" content="Everything you need to build connected applications with Nexmo" />
+
+  <meta name="basic_auth_username" content="" />
+  <meta name="basic_auth_password" content="" />
+  <meta name="search_url" content="https://abc123.execute-api.us-east-1.amazonaws.com/latest/search" />
+  <meta name="environment" content="test" />
+
+  <meta name="algolia_application_id" content="" />
+
+
+  <meta name="copyright" content="2019 Nexmo, The Vonage API Platform" />
+
+  
+
+  
+</head>
+
+
+  <body class="Nxd-template" data-push-state-root="/api/sms">
+    
+
+
+<div class="Nxd-header">
+  <header id="header" class="Nxd-header__main">
+    <div class="Nxd-logo">
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-M-plus">
+        <img src="/assets/nexmo-developer-logo-27729a3ab4703a09c7ba309049b7679e795af2d60ce84672ca12bd680f9ef77b.svg" alt="Nexmo developer logo" />
+      </a>
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-S-only">
+        <img src="/assets/nexmo-logo-collapsed-55d46ded8d5a992fbcec4c93b1b6a3ce71dab62e774fa459070345b182a5e814.svg" alt="Nexmo logo collapsed" />
+      </a>
+      <a href="/team#join" class="Vlt-M-plus">
+        <span id="header-hiring" class="Nxd-logo__hiring">We're hiring</span>
+      </a>
+    </div>
+
+    <nav data-turbolinks="false" class="Nxd-header__nav">
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://nexmo.com">Nexmo.com</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://help.nexmo.com/hc/en-us">Support</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://dashboard.nexmo.com/sign-in">Sign In</a>
+      <a href="https://dashboard.nexmo.com/sign-up" class="Vlt-btn Vlt-btn--secondary"><b>Try it free</b></a>
+    </nav>
+  </header>
+
+  <nav id="subnav" class="Nxd-header__sub" data-turbolinks="false"> 
+    <a id="Vlt-sidenav-mobile-trigger"><svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use></svg></a>
+
+    <div class="Nxd-header__sub__menu">
+      <a href="/documentation" class="Vlt-tabs__link ">Documentation</a>
+      <a href="/tutorials" class="Vlt-tabs__link ">Tutorials</a>
+      <a href="/api" class="Vlt-tabs__link Vlt-tabs__link_active">API Reference</a>
+      <a href="/tools" class="Vlt-tabs__link ">SDKs &amp; Tools</a>
+      <a href="/community" class="Vlt-tabs__link ">Community</a>
+      <a href="/extend" class="Vlt-tabs__link ">Extend</a>
+    </div>
+
+  </nav>
+</div>
+ 	
+    <div id="Vlt-sidenav" class="Vlt-sidenav Vlt-sidenav--light">
+  <div class="Vlt-sidenav__scroll">
+    <ul class="Vlt-sidemenu Vlt-sidemenu--rounded navigation">
+      <li><h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">SMS API</h5></li>
+          <li>
+            <a class="Vlt-sidemenu__link" href="#overview">Overview</a>
+          </li>
+
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#send-an-sms">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Send an SMS </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--post"><code class="Vlt-white">post</code></span>
+</a>                  </li>
+                      
+                              <li class="Nxd-menu__indent">
+                                <a class="Vlt-sidemenu__link" href="#delivery-receipt">
+                                <svg class="Vlt-blue"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-toggle" /></svg>
+                                <span class="Vlt-sidemenu__label">Delivery Receipt</span>
+</a>                              </li>
+                      
+
+
+                    <li>
+                      <a class="Vlt-sidemenu__link" href="#inbound-sms">
+                        <svg class="Vlt-orange"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-mind-map" /></svg>
+                        <span class="Vlt-sidemenu__label">Inbound SMS</span>
+                      </li>
+</a>
+
+            <li>
+              <a class="Vlt-sidemenu__link" href="#errors">Errors</a>
+            </li>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="Vlt-main Vlt-main--light Nxd-main" tabindex="2">
+  <div class="Vlt-card Vlt-article Nxd-api">
+    <div id="overview" class="Vlt-grid">
+      <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+        <div>
+          <h1>
+            SMS API
+          </h1>
+
+            <p><p>With the Nexmo SMS API you can send SMS from your account and lookup messages both messages that you've sent as well as messages sent to your virtual numbers. Numbers are specified in E.164 format.</p>
+</p>
+
+          <a class="Vlt-btn Vlt-btn--secondary Vlt-btn--app" href="/api/sms.yml">
+            <svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-download" /></svg>
+            Download OpenAPI 3 Definition
+</a>
+        </div>
+      </div>
+      <div class="Vlt-col Vlt-col--1of3 Nxd-api__code Nxd-api__code--install">
+
+
+            <div class="Nxd-api__code__header">
+
+                <div class="Vlt-native-dropdown">
+                  <select class="js-format-selector">
+                      <option value="application/json">JSON</option>
+                      <option value="text/xml">XML</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+          
+
+      </div>
+    </div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="send-an-sms">Send an SMS</h3>
+        <p><p>Send an outbound SMS from your Nexmo account</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://rest.nexmo.com</span>/sms/<span class="api-path-parameter">:format</span>
+        </code>
+      </div>
+
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>format</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The format of the response</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>json</code> or <code>xml</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>json</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <h4>Query Parameter</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>api_key</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Your API key</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>abcd1234</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>api_secret</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Your API secret. Required unless <code>sig</code> is provided</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>abcdef0123456789</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>sig</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The hash of the request parameters in alphabetical order, a timestamp and the signature secret. See <a href="https://developer.nexmo.com/concepts/guides/signing-messages">Signing Messages</a> for more details.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/x-www-form-urlencoded</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>from</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The name or number the message should be sent from. Alphanumeric senderID's are not supported in all countries, see <a href="https://developer.nexmo.com/messaging/sms/guides/global-messaging#country-specific-features">Global Messaging</a> for more details. If alphanumeric, spaces will be ignored. Numbers are specified in E.164 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>AcmeInc</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>to</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The number that the message should be sent to. Numbers are specified in E.164 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>447700900000</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>text</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The body of the message being sent. If your message contains characters that can be encoded according to the GSM Standard and Extended tables then you can set the <code>type</code> to <code>text</code>. If your message contains characters outside this range, then you will need to set the <code>type</code> to <code>unicode</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>Hello World!</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>ttl</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The duration in milliseconds the delivery of an SMS will be attempted.<br><br> By default Nexmo attempt delivery for 72 hours, however the maximum effective value depends on the operator and is typically 24 - 48 hours. We recommend this value should be kept at its default or at least 30 minutes.</p>
+
+
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                    Must be between <code>20000</code> and <code>604800000</code>
+              </small>
+          </td>
+
+              <td>
+                <code>900000</code>
+              </td>
+
+            <td>
+                <code>259200000</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>status-report-req</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 boolean
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: Boolean indicating if you like to receive a <a href="https://developer.nexmo.com/messaging/sms/building-blocks/receive-a-delivery-receipt">Delivery Receipt</a>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>true</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>callback</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The webhook endpoint the delivery receipt for this sms is sent to. This parameter overrides the webhook endpoint you set in Dashboard.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>https://example.com/sms-dlr</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>message-class</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The Data Coding Scheme value of the message</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>0</code>, <code>1</code>, <code>2</code> or <code>3</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The format of the message body</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>text</code>, <code>binary</code>, <code>wappush</code>, <code>unicode</code>, <code>vcal</code> or <code>vcard</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>text</code>
+              </td>
+
+            <td>
+                <code>text</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>vcard</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+                  | (vcard)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: A business card in <a href="https://en.wikipedia.org/wiki/VCard">vCard format</a>. Depends on <code>type</code> parameter having the value <code>vcard</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>vcal</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+                  | (vcal)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: A calendar event in <a href="https://en.wikipedia.org/wiki/VCal">vCal format</a>. Depends on <code>type</code> parameter having the value <code>vcal</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>body</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: Hex encoded binary data. Depends on <code>type</code> parameter having the value <code>binary</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>638265253311</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>udh</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: Your custom Hex encoded <a href="https://en.wikipedia.org/wiki/User_Data_Header">User Data Header</a>. Depends on <code>type</code> parameter having the value <code>binary</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>06050415811581</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>protocol-id</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The value of the <a href="https://en.wikipedia.org/wiki/GSM_03.40#Protocol_Identifier">protocol identifier</a> to use. Ensure that the value is aligned with <code>udh</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>127</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>title</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The title for a wappush SMS. Depends on <code>type</code> parameter having the value <code>wappush</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>Welcome</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>url</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The URL of your website. Depends on <code>type</code> parameter having the value <code>wappush</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>https://example.com</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>validity</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: The availability for an SMS in milliseconds. Depends on <code>type</code> parameter having the value <code>wappush</code>.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>300000</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>client-ref</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><strong>Advanced</strong>: You can optionally include your own reference of up to 40 characters.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>my-personal-reference</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-send-an-sms">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-send-an-sms-message-count">
+          <b>message-count</b>
+      </td>
+    <td>
+    <p>The amount of messages in the request</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages">
+          <b>messages</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-send-an-sms-messages-to">
+          <b>to</b>
+      </td>
+    <td>
+    <p>The number the message was sent to. Numbers are specified in E.164 format.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages-message-id">
+          <b>message-id</b>
+      </td>
+    <td>
+    <p>The ID of the message</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages-status">
+          <b>status</b>
+      </td>
+    <td>
+    <p>The status of the message. See <a href="https://developer.nexmo.com/messaging/sms/guides/troubleshooting-sms">Troubleshooting Failed SMS</a>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages-remaining-balance">
+          <b>remaining-balance</b>
+      </td>
+    <td>
+    <p>Your remaining balance</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages-message-price">
+          <b>message-price</b>
+      </td>
+    <td>
+    <p>The cost of the message</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-send-an-sms-messages-network">
+          <b>network</b>
+      </td>
+    <td>
+    <p>The ID of the network of the recipient</p>
+
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="js-format" data-format="text/xml">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message-count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"message-id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0A0000000123ABCD1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"remaining-balance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3.14159265"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"message-price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.03330000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+
+                <div class="js-format" data-format="text/xml">
+                    <pre class="highlight json"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;mt-submission-response&gt;</span>
+  <span class="nt">&lt;messages</span> <span class="na">count=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;message&gt;</span>
+      <span class="nt">&lt;to&gt;</span>447700900000<span class="nt">&lt;/to&gt;</span>
+      <span class="nt">&lt;messageId&gt;</span>0A0000000123ABCD1<span class="nt">&lt;/messageId&gt;</span>
+      <span class="nt">&lt;status&gt;</span>0<span class="nt">&lt;/status&gt;</span>
+      <span class="nt">&lt;remainingBalance&gt;</span>3.14159265<span class="nt">&lt;/remainingBalance&gt;</span>
+      <span class="nt">&lt;messagePrice&gt;</span>0.03330000<span class="nt">&lt;/messagePrice&gt;</span>
+      <span class="nt">&lt;network&gt;</span>12345<span class="nt">&lt;/network&gt;</span>
+    <span class="nt">&lt;/message&gt;</span>
+  <span class="nt">&lt;/messages&gt;</span>
+<span class="nt">&lt;/mt-submission-response&gt;</span>
+</code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+  
+
+    
+<div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="delivery-receipt" class="Vlt-title--icon">
+        Delivery Receipt
+        <span class="Vlt-badge Vlt-badge--green">
+          <i class="icon icon-callback"></i> Callback
+        </span>
+      </h3>
+        <p><p>The following are parameters sent in as a <a href="https://developer.nexmo.com/messaging/sms/guides/delivery-receipts">delivery receipt</a> callback. You can subscribe to <a href="https://developer.nexmo.com/concepts/guides/webhooks">webhooks</a> to receive notification when the delivery status of an SMS that you have sent with Nexmo changes.</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span class="api-path-host">https://example.com</span>
+          /webhooks/delivery-receipt
+        </code>
+      </div>
+
+      
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>msisdn</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The number the message was sent to. Numbers are specified in E.164 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>447700900000</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>to</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The SenderID you set in <code>from</code> in your request.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>AcmeInc</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>network-code</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The Mobile Country Code Mobile Network Code (MCCMNC) of the carrier this phone number is registered with.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>12345</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>messageId</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The Nexmo ID for this message.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0A0000001234567B</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>price</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The cost of the message</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0.03330000</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>status</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>A code that explains where the message is in the delivery process.</p>
+
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Will be one of:
+                  <code>delivered</code>, <code>expired</code>, <code>failed</code>, <code>rejected</code>, <code>accepted</code>, <code>buffered</code> or <code>unknown</code>
+              </small>
+
+          </td>
+
+              <td>
+                <code>delivered</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>scts</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>When the DLR was recieved from the carrier in the following format <code>YYMMDDHHMM</code>. For example, <code>2001011400</code> is at <code>2020-01-01 14:00</code></p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2001011400</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>err-code</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The status of the request. Will be a non <code>0</code> value if there has been an error. See the <a href="https://developer.nexmo.com/api-errors/sms">SMS error reference</a> for more details</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>message-timestamp</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The time when Nexmo started to push this Delivery Receipt to your webhook endpoint.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2020-01-01 12:00:00 +0000</code>
+              </td>
+
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+      <h5>Request model</h5>
+
+        <div class="js-format" data-format="application/json">
+          <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"msisdn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900000"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AcmeInc"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"network-code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"messageId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0A0000001234567B"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.03330000"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"delivered"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2001011400"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"err-code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message-timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T12:00:00.000+00:00"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+        </div>
+  </div>
+</div>
+
+
+
+
+
+        
+
+    
+<div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="inbound-sms" class="Vlt-title--icon">
+        Inbound SMS
+        <span class="Vlt-badge Vlt-badge--orange">
+          <i class="icon icon-webhook"></i> Webhook
+        </span>
+      </h3>
+        <p><p>If you rent one or more virtual numbers from Nexmo, inbound messages to that number are sent to your <a href="https://developer.nexmo.com/concepts/guides/webhooks">webhook endpoint</a>.</p>
+
+<p>When you receive an inbound message, you must send a 2xx response. If you do not send a 2xx response Nexmo will resend the inbound message for the next 24 hours.</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span class="api-path-host">https://example.com</span>
+          /webhooks/inbound-sms
+        </code>
+      </div>
+
+      
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>msisdn</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The phone number that this inbound message was sent from. Numbers are specified in E.164 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>447700900001</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>to</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The phone number the message was sent to. <strong>This is your virtual number</strong>. Numbers are specified in E.164 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>447700900000</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>messageId</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The ID of the message</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0A0000000123ABCD1</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>text</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The message body for this inbound message.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>Hello world</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Possible values are:</p>
+<ul class="Vlt-list Vlt-list--simple">
+<li>
+<code>text</code> - standard text.</li>
+<li>
+<code>unicode</code> - URLencoded   unicode  . This is valid for standard GSM, Arabic, Chinese, double-encoded characters and so on.</li>
+<li>
+<code>binary</code> - a binary message.</li>
+</ul>
+
+
+
+          </td>
+
+              <td>
+                <code>text</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>keyword</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The first word in the message body. This is typically used with short codes.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>Hello</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>message-timestamp</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The time when Nexmo started to push this Delivery Receipt to your webhook endpoint.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2020-01-01 12:00:00 +0000</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>timestamp</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>A unix timestamp representation of message-timestamp.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>1578787200</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>nonce</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>A random string that forms part of the signed set of parameters, it adds an extra element of unpredictability into the signature for the request. You use the nonce and timestamp parameters with your shared secret to calculate and validate the signature for inbound messages.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>aaaaaaaa-bbbb-cccc-dddd-0123456789ab</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>concat</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>True - if this is a concatenated message. This field does not exist if it is a single message</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>true</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>concat-ref</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The transaction reference. All parts of this message share this value.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>1</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>concat-total</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The number of parts in this concatenated message.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>3</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>concat-part</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The number of this part in the message. Counting starts at 1.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2</code>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>data</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+                  | (binary)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The content of this message, if type is binary.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>udh</b><br>
+            <small>
+
+                  <span class="js-format" data-format="text/xml">
+
+                  </span>
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The hex encoded User Data Header, if type is binary</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+      <h5>Request model</h5>
+
+        <div class="js-format" data-format="application/json">
+          <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"msisdn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900001"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900000"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"messageId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0A0000000123ABCD1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello world"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"keyword"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message-timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T12:00:00.000+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1578787200"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"nonce"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"concat"</span><span class="p">:</span><span class="w"> </span><span class="s2">"true"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"concat-ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"concat-total"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"concat-part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"udh"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+        </div>
+  </div>
+</div>
+
+
+
+
+      <div class="Vlt-grid" id="errors">
+        <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+          <div>
+            <h2 id="errors" data-id="abc123-this-is-a-hash" class=" Vlt-title--icon">
+<a href="#errors" class="heading-permalink">
+  <svg class="Vlt-grey"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-link"></use></svg>
+</a>
+Errors</h2>
+
+<p>Nexmo uses error codes to report back when an issue was encountered. Below you can find a full table to error codes:</p>
+<div class="Vlt-table Vlt-table--data Vlt-table--bordered"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Text</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code></td>
+<td>Throttled</td>
+<td>You have exceeded the submission capacity allowed on this account. Please wait and retry.</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Missing params</td>
+<td>Your request is incomplete and missing some mandatory parameters.</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Invalid params</td>
+<td>The value of one or more parameters is invalid.</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>Invalid credentials</td>
+<td>The <code>api_key</code> / <code>api_secret</code> you supplied is either invalid or disabled.</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>Internal error</td>
+<td>There was an error processing your request in the Platform.</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>Invalid message</td>
+<td>The Platform was unable to process your request. For example, due to an unrecognised prefix for the phone number.</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>Number barred</td>
+<td>The number you are trying to submit to is blacklisted and may not receive messages.</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>Partner account barred</td>
+<td>The api_key you supplied is for an account that has been barred from submitting messages.</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>Partner quota exceeded</td>
+<td>Your pre-paid account does not have sufficient credit to process this message.</td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td>Account not enabled for REST</td>
+<td>This account is not provisioned for REST submission, you should use SMPP instead.</td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td>Message too long</td>
+<td>The length of <code>udh</code> and <code>body</code> was greater than 140 octets for a <code>binary</code> type SMS request.</td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td>Communication Failed</td>
+<td>Message was not submitted because there was a communication failure.</td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td>Invalid Signature</td>
+<td>Message was not submitted due to a verification failure in the submitted signature.</td>
+</tr>
+<tr>
+<td><code>15</code></td>
+<td>Illegal Sender Address - rejected</td>
+<td>Due to local regulations, the SenderID you set in from in the request was not accepted. Please check the Global messaging section.</td>
+</tr>
+<tr>
+<td><code>16</code></td>
+<td>Invalid TTL</td>
+<td>The value of <code>ttl</code> in your request was invalid.</td>
+</tr>
+<tr>
+<td><code>19</code></td>
+<td>Facility not allowed</td>
+<td>Your request makes use of a facility that is not enabled on your account.</td>
+</tr>
+<tr>
+<td><code>20</code></td>
+<td>Invalid Message class</td>
+<td>The value of message-class in your request was out of range. <code>See</code> https://en.wikipedia.org/wiki/Data_Coding_Scheme.</td>
+</tr>
+<tr>
+<td><code>23</code></td>
+<td>Bad callback :: Missing Protocol</td>
+<td>You did not include <code>https</code> in the URL you set in callback.</td>
+</tr>
+<tr>
+<td><code>29</code></td>
+<td>Non White-listed Destination</td>
+<td>The phone number you set in to is not in your pre-approved destination list. To send messages to this phone number, add it <code>using</code> Dashboard.</td>
+</tr>
+<tr>
+<td><code>34</code></td>
+<td>Invalid or Missing Msisdn Param</td>
+<td>The phone number you supplied in the <code>to</code> parameter of your request was either missing or invalid.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The following response codes are for 2FA and Campaign Subscription Management only.</strong></p>
+<div class="Vlt-table Vlt-table--data Vlt-table--bordered"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>101</code></td>
+<td><code>RESPONSE_INVALID_ACCOUNT_CAMPAIGN</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The following response codes are for 2FA only.</strong></p>
+<div class="Vlt-table Vlt-table--data Vlt-table--bordered"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Text</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>102</code></td>
+<td><code>RESPONSE_MSISDN_OPTED_OUT_FOR_CAMPAIGN</code></td>
+<td>You tried to send a message to a destination number that has opted out of your program.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The following response codes are for Campaign Subscription Management only.</strong></p>
+<div class="Vlt-table Vlt-table--data Vlt-table--bordered"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>102</code></td>
+<td><code>RESPONSE_INVALID_CAMPAIGN_SHORTCODE</code></td>
+</tr>
+<tr>
+<td><code>103</code></td>
+<td><code>RESPONSE_INVALID_MSISDN</code></td>
+</tr>
+</tbody>
+</table></div>
+          </div>
+        </div>
+        <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+            <h5>Example response</h5>
+            <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message-count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"error-text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missing to param"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+        </div>
+      </div>
+    <!--<footer id="footer">
+  <div class="container">
+    <div>
+      <h5>Documentation</h5>
+      <a href="/messaging/sms/overview">SMS</a>
+      <a href="/voice/voice-api/overview">Voice</a>
+      <a href="/verify/overview">Verify</a>
+      <a href="/number-insight/overview">Number Insight</a>
+      <a href="/account/overview">Account</a>
+    </div>
+
+    <div>
+      <h5>API Reference</h5>
+      <a href="/api/sms">SMS</a>
+      <a href="/api/voice">Voice</a>
+      <a href="/api/verify">Verify</a>
+      <a href="/api/number-insight">Number Insight</a>
+      <a href="/api#developer-api">Developer API</a>
+      <a href="/api#global-apis">Global APIs</a>
+    </div>
+
+    <div>
+      <h5>Nexmo Developer</h5>
+      <a href="/community">Community</a>
+      <a href="/contribute">Contribute</a>
+      <a href="/legacy">Legacy Documentation</a>
+      <a href="/team">Team</a>
+    </div>
+
+    <div>
+      <h5>Get to know us</h5>
+      <a href="https://www.nexmo.com/platform" target="_blank">Nexmo Platform</a>
+      <a href="https://www.nexmo.com/about-nexmo" target="_blank">About Nexmo</a>
+      <a href="https://www.nexmo.com/careers" target="_blank">Careers</a>
+      <a href="https://www.nexmo.com/leadership" target="_blank">Leadership</a>
+      <a href="https://www.vonage.com/corporate" target="_blank">Press</a>
+    </div>
+
+    <div id="footer-support">
+      <h5>Support</h5>
+      <a href="https://help.nexmo.com" target="_blank">Knowledgebase</a>
+      <a href="https://help.nexmo.com/hc/en-us/sections/115004147507" target="_blank">Known Issues</a>
+    </div>
+
+    <div id="footer-outbound-links">
+      <a href="https://nexmo.com/" id="footer-logo">
+        <img src="/assets/nexmo-vonage-white-04f5e57888fe21adf637c8227d1a03fb8c1d0240b9d136f4b8e8d881db375833.svg" alt="Nexmo vonage white" />
+      </a>
+
+      <a href="https://www.nexmostatus.com/" target="_blank" class="Vlt-badge-combined">
+        <span class="Vlt-badge Vlt-badge--blue">API Status</span><span class="Vlt-badge Vlt-badge--green Nxd-api-status">Loading</span>
+      </a>
+
+      <div id="footer-social-links">
+        <a href="https://www.linkedin.com/company/1345545/" class="footer-link" target="_blank"><i class="icon icon-linkedin"></i></a>
+        <a href="/slack" class="footer-link" target="_blank"><i class="icon icon-slack"></i></a>
+        <a href="https://twitter.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-twitter"></i></a>
+        <a href="https://github.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-github"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/nexmo" class="footer-link" target="_blank"><i class="icon icon-stack-overflow"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+  </div>
+</div>
+
+  </body>
+</html>
+	

@@ -4,20 +4,6 @@
   format = nil if local_assigns[:format].nil?
 %>
 
-<% # @mheap: I'm not sure why this check is here. I checked other OAS docs and we may be able to remove it. It renders better if the else statement is triggered %>
-<% if false && parameters[0] && parameters[0].subproperties_are_one_of_many? %>
-    <h3>Any one of the following:</h3>
-    <div style="margin-left: 20px;">
-      <% parameters[0].properties.each do |property| %>
-        <h4><%= property['description'] %></h4>
-        <% if property['properties'][0].class == OasParser::Property %>
-          <%= render 'parameters', parameters: property['properties'], model: model, callback: callback %>
-        <% else %>
-          <% dmsklandklsan %>
-        <% end %>
-      <% end %>
-    </div>
-<% else %>
 <div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
   <table>
     <thead>
@@ -169,4 +155,3 @@
     </tbody>
   </table>
 </div>
-<% end %>

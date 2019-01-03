@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nexmo Developer</title>
+
+
+
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("abc123");
+      analytics.page();
+      }}();
+    </script>
+
+
+
+
+  <link rel="stylesheet" media="all" href="/assets/application-46768d12c9e58a87299d67f91ed2687e5ddb110ee11b80d488e44d9d0ed101bf.css" />
+  <script src="/assets/application-86729a2cd807fb8af29949b95c5d1a4fb2ad8ea9dae3870ac52a4f3dae2387f6.js" data-turbolinks-track="reload"></script>
+
+
+
+  <script src="/packs-test/application-8006671cb63b3856dd3b.js" defer="defer"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+    <meta name="robots" content="noindex,nofollow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Nexmo Developer">
+  <meta name="application-name" content="Nexmo Developer">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:url" content="http://www.example.com/api/audit" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Nexmo Developer" />
+
+  <meta property="og:image" content="http://www.example.com/assets/images/nexmo-developer-card.png" />
+  <meta property="og:image:width" content="835" />
+  <meta property="og:image:height" content="437" />
+
+    <meta property="og:description" content="Everything you need to build connected applications with Nexmo" />
+
+  <meta name="basic_auth_username" content="" />
+  <meta name="basic_auth_password" content="" />
+  <meta name="search_url" content="https://abc123.execute-api.us-east-1.amazonaws.com/latest/search" />
+  <meta name="environment" content="test" />
+
+  <meta name="algolia_application_id" content="" />
+
+
+  <meta name="copyright" content="2019 Nexmo, The Vonage API Platform" />
+
+  
+
+  
+</head>
+
+
+  <body class="Nxd-template" data-push-state-root="/api/audit">
+    
+
+
+<div class="Nxd-header">
+  <header id="header" class="Nxd-header__main">
+    <div class="Nxd-logo">
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-M-plus">
+        <img src="/assets/nexmo-developer-logo-27729a3ab4703a09c7ba309049b7679e795af2d60ce84672ca12bd680f9ef77b.svg" alt="Nexmo developer logo" />
+      </a>
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-S-only">
+        <img src="/assets/nexmo-logo-collapsed-55d46ded8d5a992fbcec4c93b1b6a3ce71dab62e774fa459070345b182a5e814.svg" alt="Nexmo logo collapsed" />
+      </a>
+      <a href="/team#join" class="Vlt-M-plus">
+        <span id="header-hiring" class="Nxd-logo__hiring">We're hiring</span>
+      </a>
+    </div>
+
+    <nav data-turbolinks="false" class="Nxd-header__nav">
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://nexmo.com">Nexmo.com</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://help.nexmo.com/hc/en-us">Support</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://dashboard.nexmo.com/sign-in">Sign In</a>
+      <a href="https://dashboard.nexmo.com/sign-up" class="Vlt-btn Vlt-btn--secondary"><b>Try it free</b></a>
+    </nav>
+  </header>
+
+  <nav id="subnav" class="Nxd-header__sub" data-turbolinks="false"> 
+    <a id="Vlt-sidenav-mobile-trigger"><svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use></svg></a>
+
+    <div class="Nxd-header__sub__menu">
+      <a href="/documentation" class="Vlt-tabs__link ">Documentation</a>
+      <a href="/tutorials" class="Vlt-tabs__link ">Tutorials</a>
+      <a href="/api" class="Vlt-tabs__link Vlt-tabs__link_active">API Reference</a>
+      <a href="/tools" class="Vlt-tabs__link ">SDKs &amp; Tools</a>
+      <a href="/community" class="Vlt-tabs__link ">Community</a>
+      <a href="/extend" class="Vlt-tabs__link ">Extend</a>
+    </div>
+
+  </nav>
+</div>
+ 	
+    <div id="Vlt-sidenav" class="Vlt-sidenav Vlt-sidenav--light">
+  <div class="Vlt-sidenav__scroll">
+    <ul class="Vlt-sidemenu Vlt-sidemenu--rounded navigation">
+      <li><h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Nexmo Audit API</h5></li>
+          <li>
+            <a class="Vlt-sidemenu__link" href="#overview">Overview</a>
+          </li>
+
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#getEvents">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve audit events </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#getEventsOptions">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve audit event types </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--options"><code class="Vlt-white">options</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#getEvent">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve individual audit event </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+
+
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="Vlt-main Vlt-main--light Nxd-main" tabindex="2">
+  <div class="Vlt-card Vlt-article Nxd-api">
+    <div id="overview" class="Vlt-grid">
+      <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+        <div>
+          <h1>
+            Nexmo Audit API
+          </h1>
+
+            <p><p>Nexmo's Audit API allows you to view details of changes to your account.</p>
+</p>
+
+          <a class="Vlt-btn Vlt-btn--secondary Vlt-btn--app" href="/api/audit.yml">
+            <svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-download" /></svg>
+            Download OpenAPI 3 Definition
+</a>
+        </div>
+      </div>
+      <div class="Vlt-col Vlt-col--1of3 Nxd-api__code Nxd-api__code--install">
+
+      </div>
+    </div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="getEvents">Retrieve audit events</h3>
+        <p><p>Get a series of audit events describing changes made to your Nexmo account over time.</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com</span>/beta/audit/events
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+
+  <h4>Query Parameter</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>event_type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Filter results by this event type.</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>USER_STATUS</code>, <code>USER_UPDATE</code>, <code>USER_BILLING_UPDATE</code>, <code>USER_CREATE</code>, <code>USER_LOGIN</code>, <code>USER_LOGOUT</code>, <code>USER_PRODUCT_SEARCH</code>, <code>USER_API_KEYS_UPDATE</code>, <code>ACCOUNT_SECRET_DELETE</code>, <code>ACCOUNT_SECRET_CREATE</code>, <code>ACCOUNT_UPDATE_SPAMMER</code>, <code>ACCOUNT_UPDATE_SETTINGS_API</code>, <code>NUMBER_ASSIGN</code>, <code>NUMBER_UPDATED</code>, <code>NUMBER_RELEASE</code>, <code>NUMBER_LINKED</code>, <code>NUMBER_UNLINKED</code>, <code>APP_CREATE</code>, <code>APP_UPDATE</code>, <code>APP_DELETE</code>, <code>APP_DISABLE</code>, <code>APP_ENABLE</code>, <code>IP_WHITELIST_CREATE</code>, <code>IP_WHITELIST_DELETE</code>, <code>AUTORELOAD_ENABLE</code>, <code>AUTORELOAD_UPDATE</code> or <code>AUTORELOAD_DISABLE</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>APP_CREATE</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>date_from</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Start of time range for audit events. DateTime in ISO-8601 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>date_to</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>End of time range for audit events. DateTime in ISO-8601 format.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>search_text</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return only audit events where the JSON object contains this search text. Must be legal text for a JSON attribute value, that is quotes and braces must be escaped.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>page</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Page number starting with page 1.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>size</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Number of elements per page.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>30</code>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-getEvents">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr class=" Vlt-table__row--noline" >
+      <td id="response-getEvents-_embedded">
+          <b>_embedded</b>
+      </td>
+    <td>
+    <p>Container containing the <code>events</code> array.</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getEvents-_embedded-events">
+          <b>events</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getEvents-_embedded-events-id">
+          <b>id</b>
+      </td>
+    <td>
+    <p>UUID of the audit event</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-event_type">
+          <b>event_type</b>
+      </td>
+    <td>
+    <p>The type of the audit event.</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>USER_STATUS</code>, <code>USER_UPDATE</code>, <code>USER_BILLING_UPDATE</code>, <code>USER_CREATE</code>, <code>USER_LOGIN</code>, <code>USER_LOGOUT</code>, <code>USER_PRODUCT_SEARCH</code>, <code>USER_API_KEYS_UPDATE</code>, <code>ACCOUNT_SECRET_DELETE</code>, <code>ACCOUNT_SECRET_CREATE</code>, <code>ACCOUNT_UPDATE_SPAMMER</code>, <code>ACCOUNT_UPDATE_SETTINGS_API</code>, <code>NUMBER_ASSIGN</code>, <code>NUMBER_UPDATED</code>, <code>NUMBER_RELEASE</code>, <code>NUMBER_LINKED</code>, <code>NUMBER_UNLINKED</code>, <code>APP_CREATE</code>, <code>APP_UPDATE</code>, <code>APP_DELETE</code>, <code>APP_DISABLE</code>, <code>APP_ENABLE</code>, <code>IP_WHITELIST_CREATE</code>, <code>IP_WHITELIST_DELETE</code>, <code>AUTORELOAD_ENABLE</code>, <code>AUTORELOAD_UPDATE</code> or <code>AUTORELOAD_DISABLE</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-event_type_description">
+          <b>event_type_description</b>
+      </td>
+    <td>
+    <p>A description of the event type</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-created_at">
+          <b>created_at</b>
+      </td>
+    <td>
+    <p>When the audit event was created.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-user_email">
+          <b>user_email</b>
+      </td>
+    <td>
+    <p>Email of the user whose account the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-user_id">
+          <b>user_id</b>
+      </td>
+    <td>
+    <p>The ID of the user that the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-account_id">
+          <b>account_id</b>
+      </td>
+    <td>
+    <p>The NEXMO_API_KEY of the Nexmo account that the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-source">
+          <b>source</b>
+      </td>
+    <td>
+    <p>The source of the event.
+CD: Customer Dashboard DEVAPI: via Developer API</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>CD</code> or <code>DEVAPI</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-source_ip">
+          <b>source_ip</b>
+      </td>
+    <td>
+    <p>The IP address used to make the account change.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-source_description">
+          <b>source_description</b>
+      </td>
+    <td>
+    <p>Description of the audit event source.</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>Customer Dashboard</code> or <code>Developer API</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-source_country">
+          <b>source_country</b>
+      </td>
+    <td>
+    <p>ISO 3166-1 Alpha-2 country code recorded for the event.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-_embedded-events-context">
+          <b>context</b>
+      </td>
+    <td>
+    <p>A valid JSON object with information detailing the context of the audit event.</p>
+
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+  <tr class=" Vlt-table__row--noline" >
+      <td id="response-getEvents-page">
+          <b>page</b>
+      </td>
+    <td>
+    <p>Page containing results.</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getEvents-page-size">
+          <b>size</b>
+      </td>
+    <td>
+    <p>The total number of items in this response (page).</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-page-totalElements">
+          <b>totalElements</b>
+      </td>
+    <td>
+    <p>The total number of items across all pages.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-page-totalPages">
+          <b>totalPages</b>
+      </td>
+    <td>
+    <p>The number of pages of data in the response.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvents-page-number">
+          <b>number</b>
+      </td>
+    <td>
+    <p>Which page of the pagination sequence you are looking at.</p>
+
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"_embedded"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"events"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"event_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APP_CREATE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"event_type_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application created."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-07-04T11:41:32"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user@example.org"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1234567</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CD"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"source_ip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"192.0.2.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"source_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Dashboard"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"source_country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GB"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcdef01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"appId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My voice app"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"answer_url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/call"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"voice"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"event_url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/event"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/audit/events/aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://api.nexmo.com/beta/audit/events"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://api.nexmo.com/beta/audit/events?page=2&amp;size=30"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"last"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://api.nexmo.com/beta/audit/events?page=2&amp;size=30"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"totalElements"</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorized"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full authentication is required. JWT was not found in </span><span class="se">\"</span><span class="s2">Authorization</span><span class="se">\"</span><span class="s2"> HTTP header."</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">403</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An example goes here"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Found"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event with provided id: aaaaaaaa-bbbb-cccc-dddd-0123456789ab was not found"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="getEventsOptions">Retrieve audit event types</h3>
+        <p><p>Get audit event types.</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--options">OPTIONS</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com</span>/beta/audit/events
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-getEventsOptions">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-getEventsOptions-eventTypes">
+          <b>eventTypes</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    <p>An array of audit event types.</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getEventsOptions-eventTypes-type">
+          <b>type</b>
+      </td>
+    <td>
+    <p>The type of the audit event.</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>USER_STATUS</code>, <code>USER_UPDATE</code>, <code>USER_BILLING_UPDATE</code>, <code>USER_CREATE</code>, <code>USER_LOGIN</code>, <code>USER_LOGOUT</code>, <code>USER_PRODUCT_SEARCH</code>, <code>USER_API_KEYS_UPDATE</code>, <code>ACCOUNT_SECRET_DELETE</code>, <code>ACCOUNT_SECRET_CREATE</code>, <code>ACCOUNT_UPDATE_SPAMMER</code>, <code>ACCOUNT_UPDATE_SETTINGS_API</code>, <code>NUMBER_ASSIGN</code>, <code>NUMBER_UPDATED</code>, <code>NUMBER_RELEASE</code>, <code>NUMBER_LINKED</code>, <code>NUMBER_UNLINKED</code>, <code>APP_CREATE</code>, <code>APP_UPDATE</code>, <code>APP_DELETE</code>, <code>APP_DISABLE</code>, <code>APP_ENABLE</code>, <code>IP_WHITELIST_CREATE</code>, <code>IP_WHITELIST_DELETE</code>, <code>AUTORELOAD_ENABLE</code>, <code>AUTORELOAD_UPDATE</code> or <code>AUTORELOAD_DISABLE</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEventsOptions-eventTypes-description">
+          <b>description</b>
+      </td>
+    <td>
+    <p>A description of the event type</p>
+
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"eventTypes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APP_CREATE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application created."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">204</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">204</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No Content"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No content"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorized"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full authentication is required. JWT was not found in </span><span class="se">\"</span><span class="s2">Authorization</span><span class="se">\"</span><span class="s2"> HTTP header."</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">403</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An example goes here"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="getEvent">Retrieve individual audit event</h3>
+        <p><p>Get the specified audit event.</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com</span>/beta/audit/events/<span class="api-path-parameter">:id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The UUID of the audit event to retrieve</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>aaaaaaaa-bbbb-cccc-dddd-0123456789ab</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-getEvent">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-getEvent-id">
+          <b>id</b>
+      </td>
+    <td>
+    <p>UUID of the audit event</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-event_type">
+          <b>event_type</b>
+      </td>
+    <td>
+    <p>The type of the audit event.</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>USER_STATUS</code>, <code>USER_UPDATE</code>, <code>USER_BILLING_UPDATE</code>, <code>USER_CREATE</code>, <code>USER_LOGIN</code>, <code>USER_LOGOUT</code>, <code>USER_PRODUCT_SEARCH</code>, <code>USER_API_KEYS_UPDATE</code>, <code>ACCOUNT_SECRET_DELETE</code>, <code>ACCOUNT_SECRET_CREATE</code>, <code>ACCOUNT_UPDATE_SPAMMER</code>, <code>ACCOUNT_UPDATE_SETTINGS_API</code>, <code>NUMBER_ASSIGN</code>, <code>NUMBER_UPDATED</code>, <code>NUMBER_RELEASE</code>, <code>NUMBER_LINKED</code>, <code>NUMBER_UNLINKED</code>, <code>APP_CREATE</code>, <code>APP_UPDATE</code>, <code>APP_DELETE</code>, <code>APP_DISABLE</code>, <code>APP_ENABLE</code>, <code>IP_WHITELIST_CREATE</code>, <code>IP_WHITELIST_DELETE</code>, <code>AUTORELOAD_ENABLE</code>, <code>AUTORELOAD_UPDATE</code> or <code>AUTORELOAD_DISABLE</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-event_type_description">
+          <b>event_type_description</b>
+      </td>
+    <td>
+    <p>A description of the event type</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-created_at">
+          <b>created_at</b>
+      </td>
+    <td>
+    <p>When the audit event was created.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-user_email">
+          <b>user_email</b>
+      </td>
+    <td>
+    <p>Email of the user whose account the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-user_id">
+          <b>user_id</b>
+      </td>
+    <td>
+    <p>The ID of the user that the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-account_id">
+          <b>account_id</b>
+      </td>
+    <td>
+    <p>The NEXMO_API_KEY of the Nexmo account that the audit event is associated with.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-source">
+          <b>source</b>
+      </td>
+    <td>
+    <p>The source of the event.
+CD: Customer Dashboard DEVAPI: via Developer API</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>CD</code> or <code>DEVAPI</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-source_ip">
+          <b>source_ip</b>
+      </td>
+    <td>
+    <p>The IP address used to make the account change.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-source_description">
+          <b>source_description</b>
+      </td>
+    <td>
+    <p>Description of the audit event source.</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>Customer Dashboard</code> or <code>Developer API</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-source_country">
+          <b>source_country</b>
+      </td>
+    <td>
+    <p>ISO 3166-1 Alpha-2 country code recorded for the event.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getEvent-context">
+          <b>context</b>
+      </td>
+    <td>
+    <p>A valid JSON object with information detailing the context of the audit event.</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"event_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APP_CREATE"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"event_type_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application created."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-07-04T11:41:32"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"user_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user@example.org"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1234567</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CD"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"source_ip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"192.0.2.0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"source_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Dashboard"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"source_country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GB"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcdef01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"appId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My voice app"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"answer_url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/call"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"voice"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"event_url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POST"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/event"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/audit/events/aaaaaaaa-bbbb-cccc-dddd-0123456789ab"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorized"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full authentication is required. JWT was not found in </span><span class="se">\"</span><span class="s2">Authorization</span><span class="se">\"</span><span class="s2"> HTTP header."</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Found"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event with provided id: aaaaaaaa-bbbb-cccc-dddd-0123456789ab was not found"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--<footer id="footer">
+  <div class="container">
+    <div>
+      <h5>Documentation</h5>
+      <a href="/messaging/sms/overview">SMS</a>
+      <a href="/voice/voice-api/overview">Voice</a>
+      <a href="/verify/overview">Verify</a>
+      <a href="/number-insight/overview">Number Insight</a>
+      <a href="/account/overview">Account</a>
+    </div>
+
+    <div>
+      <h5>API Reference</h5>
+      <a href="/api/sms">SMS</a>
+      <a href="/api/voice">Voice</a>
+      <a href="/api/verify">Verify</a>
+      <a href="/api/number-insight">Number Insight</a>
+      <a href="/api#developer-api">Developer API</a>
+      <a href="/api#global-apis">Global APIs</a>
+    </div>
+
+    <div>
+      <h5>Nexmo Developer</h5>
+      <a href="/community">Community</a>
+      <a href="/contribute">Contribute</a>
+      <a href="/legacy">Legacy Documentation</a>
+      <a href="/team">Team</a>
+    </div>
+
+    <div>
+      <h5>Get to know us</h5>
+      <a href="https://www.nexmo.com/platform" target="_blank">Nexmo Platform</a>
+      <a href="https://www.nexmo.com/about-nexmo" target="_blank">About Nexmo</a>
+      <a href="https://www.nexmo.com/careers" target="_blank">Careers</a>
+      <a href="https://www.nexmo.com/leadership" target="_blank">Leadership</a>
+      <a href="https://www.vonage.com/corporate" target="_blank">Press</a>
+    </div>
+
+    <div id="footer-support">
+      <h5>Support</h5>
+      <a href="https://help.nexmo.com" target="_blank">Knowledgebase</a>
+      <a href="https://help.nexmo.com/hc/en-us/sections/115004147507" target="_blank">Known Issues</a>
+    </div>
+
+    <div id="footer-outbound-links">
+      <a href="https://nexmo.com/" id="footer-logo">
+        <img src="/assets/nexmo-vonage-white-04f5e57888fe21adf637c8227d1a03fb8c1d0240b9d136f4b8e8d881db375833.svg" alt="Nexmo vonage white" />
+      </a>
+
+      <a href="https://www.nexmostatus.com/" target="_blank" class="Vlt-badge-combined">
+        <span class="Vlt-badge Vlt-badge--blue">API Status</span><span class="Vlt-badge Vlt-badge--green Nxd-api-status">Loading</span>
+      </a>
+
+      <div id="footer-social-links">
+        <a href="https://www.linkedin.com/company/1345545/" class="footer-link" target="_blank"><i class="icon icon-linkedin"></i></a>
+        <a href="/slack" class="footer-link" target="_blank"><i class="icon icon-slack"></i></a>
+        <a href="https://twitter.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-twitter"></i></a>
+        <a href="https://github.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-github"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/nexmo" class="footer-link" target="_blank"><i class="icon icon-stack-overflow"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+  </div>
+</div>
+
+  </body>
+</html>
+	

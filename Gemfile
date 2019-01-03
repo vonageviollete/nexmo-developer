@@ -151,6 +151,7 @@ group :development, :test do
   gem 'rawler', git: 'https://github.com/oscardelben/rawler.git', require: false
   gem 'rspec-collection_matchers'
   gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-snapshot'
   gem 'simplecov', require: false
 end
 

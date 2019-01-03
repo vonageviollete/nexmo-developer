@@ -1,0 +1,3352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nexmo Developer</title>
+
+
+
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("abc123");
+      analytics.page();
+      }}();
+    </script>
+
+
+
+
+  <link rel="stylesheet" media="all" href="/assets/application-46768d12c9e58a87299d67f91ed2687e5ddb110ee11b80d488e44d9d0ed101bf.css" />
+  <script src="/assets/application-86729a2cd807fb8af29949b95c5d1a4fb2ad8ea9dae3870ac52a4f3dae2387f6.js" data-turbolinks-track="reload"></script>
+
+
+
+  <script src="/packs-test/application-8006671cb63b3856dd3b.js" defer="defer"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+    <meta name="robots" content="noindex,nofollow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Nexmo Developer">
+  <meta name="application-name" content="Nexmo Developer">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:url" content="http://www.example.com/api/external-accounts" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Nexmo Developer" />
+
+  <meta property="og:image" content="http://www.example.com/assets/images/nexmo-developer-card.png" />
+  <meta property="og:image:width" content="835" />
+  <meta property="og:image:height" content="437" />
+
+    <meta property="og:description" content="Everything you need to build connected applications with Nexmo" />
+
+  <meta name="basic_auth_username" content="" />
+  <meta name="basic_auth_password" content="" />
+  <meta name="search_url" content="https://abc123.execute-api.us-east-1.amazonaws.com/latest/search" />
+  <meta name="environment" content="test" />
+
+  <meta name="algolia_application_id" content="" />
+
+
+  <meta name="copyright" content="2019 Nexmo, The Vonage API Platform" />
+
+  
+
+  
+</head>
+
+
+  <body class="Nxd-template" data-push-state-root="/api/external-accounts">
+    
+
+
+<div class="Nxd-header">
+  <header id="header" class="Nxd-header__main">
+    <div class="Nxd-logo">
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-M-plus">
+        <img src="/assets/nexmo-developer-logo-27729a3ab4703a09c7ba309049b7679e795af2d60ce84672ca12bd680f9ef77b.svg" alt="Nexmo developer logo" />
+      </a>
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-S-only">
+        <img src="/assets/nexmo-logo-collapsed-55d46ded8d5a992fbcec4c93b1b6a3ce71dab62e774fa459070345b182a5e814.svg" alt="Nexmo logo collapsed" />
+      </a>
+      <a href="/team#join" class="Vlt-M-plus">
+        <span id="header-hiring" class="Nxd-logo__hiring">We're hiring</span>
+      </a>
+    </div>
+
+    <nav data-turbolinks="false" class="Nxd-header__nav">
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://nexmo.com">Nexmo.com</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://help.nexmo.com/hc/en-us">Support</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://dashboard.nexmo.com/sign-in">Sign In</a>
+      <a href="https://dashboard.nexmo.com/sign-up" class="Vlt-btn Vlt-btn--secondary"><b>Try it free</b></a>
+    </nav>
+  </header>
+
+  <nav id="subnav" class="Nxd-header__sub" data-turbolinks="false"> 
+    <a id="Vlt-sidenav-mobile-trigger"><svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use></svg></a>
+
+    <div class="Nxd-header__sub__menu">
+      <a href="/documentation" class="Vlt-tabs__link ">Documentation</a>
+      <a href="/tutorials" class="Vlt-tabs__link ">Tutorials</a>
+      <a href="/api" class="Vlt-tabs__link Vlt-tabs__link_active">API Reference</a>
+      <a href="/tools" class="Vlt-tabs__link ">SDKs &amp; Tools</a>
+      <a href="/community" class="Vlt-tabs__link ">Community</a>
+      <a href="/extend" class="Vlt-tabs__link ">Extend</a>
+    </div>
+
+  </nav>
+</div>
+ 	
+    <div id="Vlt-sidenav" class="Vlt-sidenav Vlt-sidenav--light">
+  <div class="Vlt-sidenav__scroll">
+    <ul class="Vlt-sidemenu Vlt-sidemenu--rounded navigation">
+      <li><h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">External Accounts</h5></li>
+          <li>
+            <a class="Vlt-sidemenu__link" href="#overview">Overview</a>
+          </li>
+
+                <li>
+                  <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Application</h5>
+                </li>
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#LinkApplication">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Link application to an account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--post"><code class="Vlt-white">post</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#UnliWithoutApplicationnkApplication">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Unlink application from an account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--delete"><code class="Vlt-white">delete</code></span>
+</a>                  </li>
+
+
+                </li>
+                <li>
+                  <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Account</h5>
+                </li>
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#GetAllAccounts">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve all accounts you own </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+
+
+                </li>
+                <li>
+                  <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Facebook Messenger</h5>
+                </li>
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#CreateMessengerAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Create a Messenger account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--post"><code class="Vlt-white">post</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#GetMessengerAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve a Messenger account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#UpdateMessengerAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Update a Messenger account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--patch"><code class="Vlt-white">patch</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#DeleteMessengerAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Delete a Messenger account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--delete"><code class="Vlt-white">delete</code></span>
+</a>                  </li>
+
+
+                </li>
+                <li>
+                  <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Viber Service Message</h5>
+                </li>
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#GetVSMAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve a Viber Service Message account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+
+
+                </li>
+                <li>
+                  <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Whatsapp</h5>
+                </li>
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#GetWAAccount">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Retrieve a Whatsapp account </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+
+
+                </li>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="Vlt-main Vlt-main--light Nxd-main" tabindex="2">
+  <div class="Vlt-card Vlt-article Nxd-api">
+    <div id="overview" class="Vlt-grid">
+      <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+        <div>
+          <h1>
+            External Accounts
+              <span class="Vlt-badge Vlt-badge--developer-preview">
+                Developer Preview
+              </span>
+          </h1>
+
+            <p><p>The External Accounts API is used to manage accounts for Viber Service Messages, Facebook Messenger and Whatsapp for use in the <a href="https://developer.nexmo.com/messages/overview">Messages</a> and <a href="https://developer.nexmo.com/dispatch/overview">Dispatch</a> APIs.</p>
+</p>
+
+          <a class="Vlt-btn Vlt-btn--secondary Vlt-btn--app" href="/api/external-accounts.yml">
+            <svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-download" /></svg>
+            Download OpenAPI 3 Definition
+</a>
+        </div>
+      </div>
+      <div class="Vlt-col Vlt-col--1of3 Nxd-api__code Nxd-api__code--install">
+
+      </div>
+    </div>
+
+          <div class="Vlt-grid  Nxd-api--noborder Vlt-article--reverse">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h1 id="application" class="Vlt-grey-dark">Application</h1>
+      <p class="Vlt-grey-darker">Inbound messages to an external account which is linked to an application will be delivered to the application&#39;s inbound URL.</p>
+
+    </div>
+  </div>
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+  </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="LinkApplication">Link application to an account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/<span class="api-path-parameter">:provider</span>/<span class="api-path-parameter">:external_id</span>/applications
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>provider</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Provider of the account you want to assign an application to</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>messenger</code>, <code>viber_service_msg</code> or <code>whatsapp</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to assign an application to. This is channel dependent. For Facebook it will be your Facebook Page ID, for Viber your Viber Service Message ID and for WhatsApp your WhatsApp number.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>application</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>There is just one application allowed per an account. The application type must be type "messages". For more information please see <a href="https://www.nexmo.com/api/application">Application API Spec</a></p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>applicationId</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-LinkApplication">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-LinkApplication-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-LinkApplication-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-LinkApplication-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-LinkApplication-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-LinkApplication-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be one of <code>messenger, viber_service_msg, whatsapp</code>).</p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>messenger</code>, <code>viber_service_msg</code> or <code>whatsapp</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-LinkApplication-access_token">
+          <b>access_token</b>
+      </td>
+    <td>
+    <p>The provider access token (only for <code>messenger</code>)</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"applicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"messenger"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accessToken"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cannot link application"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">409</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#Conflict"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application conflict"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unable to link application"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="UnliWithoutApplicationnkApplication">Unlink application from an account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--delete">DELETE</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/<span class="api-path-parameter">:provider</span>/<span class="api-path-parameter">:external_id</span>/applications/<span class="api-path-parameter">:application_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>provider</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Provider of the account you want to unlink an application from</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>messenger</code>, <code>viber_service_msg</code> or <code>whatsapp</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to unlink an application from</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>application_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Id of the application you want to unlink</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+      
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">204</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forbidden"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cannot unlink application"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">409</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#Conflict"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application conflict"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unable to unlink application"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+          <div class="Vlt-grid  Nxd-api--noborder Vlt-article--reverse">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h1 id="account" class="Vlt-grey-dark">Account</h1>
+      <p class="Vlt-grey-darker">An external-account used as the `from` field in the Messages API and Dispatch API</p>
+
+    </div>
+  </div>
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+  </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="GetAllAccounts">Retrieve all accounts you own</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+
+  <h4>Query Parameter</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>provider</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Filter by provider</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>messenger</code>, <code>viber_service_msg</code> or <code>whatsapp</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>page_number</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Page number of the results</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>1</code>
+              </td>
+
+            <td>
+                <code>1</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>page_size</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Page size of the results</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>1</code>
+              </td>
+
+            <td>
+                <code>20</code>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-GetAllAccounts">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-GetAllAccounts-page_number">
+          <b>page_number</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetAllAccounts-page_size">
+          <b>page_size</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetAllAccounts-_embedded">
+          <b>_embedded</b>
+              <br />
+              <small>array of s</small>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"page_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"page_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"_embedded"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optionalName"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"optionalApplicationId"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"whatsapp"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myAccessToken"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/chatapp-accounts?page_number=1&amp;page_size=10"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/chatapp-accounts?page_number=3&amp;page_size=10"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"prev"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/chatapp-accounts?page_number=1&amp;page_size=10"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"first"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/chatapp-accounts?page_number=1&amp;page_size=10"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"last"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.nexmo.com/beta/chatapp-accounts?page_number=4&amp;page_size=10"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+          <div class="Vlt-grid  Nxd-api--noborder Vlt-article--reverse">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h1 id="facebook-messenger" class="Vlt-grey-dark">Facebook Messenger</h1>
+      <p class="Vlt-grey-darker">Managing your [Facebook Messenger](https://developer.nexmo.com/messages/concepts/facebook) account</p>
+
+    </div>
+  </div>
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+  </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="CreateMessengerAccount">Create a Messenger account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/messenger
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>This is the unique identifier within the provider's domain. In this case it is the Page ID for your Facebook Page. Go to your Facebook Page, click "Settings", click "Messenger platform " scroll down to "Messenger link" to find your Page ID.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>12345678</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>access_token</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>It is a Facebook Page token. There ways how to obtain the token </p><ul> <li>Use our tool to link a page to your Nexmo account<a href="https://static.nexmo.com/messenger/">https://static.nexmo.com/messenger/</a>
+</li> <li>Following the official <a href="https://developers.facebook.com/docs/pages/access-tokens/">token reference</a>
+</li> </ul>
+
+
+
+
+          </td>
+
+              <td>
+                <code>myAccessToken</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>name</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Custom account name</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>optionalName</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>applications</b><br>
+            <small>
+
+
+              <i>
+                 array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-CreateMessengerAccount">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-CreateMessengerAccount-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-CreateMessengerAccount-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-CreateMessengerAccount-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-CreateMessengerAccount-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-CreateMessengerAccount-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be <code>messenger</code>).</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-CreateMessengerAccount-access_token">
+          <b>access_token</b>
+      </td>
+    <td>
+    <p>The provider access token</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">201</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optionalName"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"optionalApplicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"messenger"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myAccessToken"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">400</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#InvalidParams"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your request parameters didn't validate."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Found errors validating 1 of your submitted parameters."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"instance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"invalid_params"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"external_id"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missing `external_id` field"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wrong authentication - You are not authorised to access this resource"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="GetMessengerAccount">Retrieve a Messenger account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/messenger/<span class="api-path-parameter">:external_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to retrieve. In this case it is the Facebook Page ID.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-GetMessengerAccount">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-GetMessengerAccount-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetMessengerAccount-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetMessengerAccount-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetMessengerAccount-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetMessengerAccount-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be <code>messenger</code>).</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetMessengerAccount-access_token">
+          <b>access_token</b>
+      </td>
+    <td>
+    <p>The provider access token</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optionalName"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"optionalApplicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"messenger"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myAccessToken"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="UpdateMessengerAccount">Update a Messenger account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--patch">PATCH</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/messenger/<span class="api-path-parameter">:external_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to update. In this case it is the Facebook Page ID.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>name</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The new account name</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>newName</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>applications</b><br>
+            <small>
+
+
+              <i>
+                 array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>access_token</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><i>None</i></p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>updatedAccessToken</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-UpdateMessengerAccount">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-UpdateMessengerAccount-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-UpdateMessengerAccount-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-UpdateMessengerAccount-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account. In this case it is the Facebook Page ID.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-UpdateMessengerAccount-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-UpdateMessengerAccount-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be <code>messenger</code>).</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-UpdateMessengerAccount-access_token">
+          <b>access_token</b>
+      </td>
+    <td>
+    <p>The provider access token</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"newName"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"newApplicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"messenger"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"updatedAccessToken"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">400</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.nexmo.com/messages/Errors#InvalidParams"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Your request parameters didn't validate."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Found errors validating 1 of your submitted parameters."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"instance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"invalid_params"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"external_id"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"'external_id' parameter cannot be changed"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wrong authentication - You are not authorised to access this resource"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="DeleteMessengerAccount">Delete a Messenger account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--delete">DELETE</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/messenger/<span class="api-path-parameter">:external_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to delete. In this case it is the Facebook Page ID.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+      
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">204</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">403</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wrong authentication - You are not authorised to access this resource"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+          <div class="Vlt-grid  Nxd-api--noborder Vlt-article--reverse">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h1 id="viber-service-message" class="Vlt-grey-dark">Viber Service Message</h1>
+      <p class="Vlt-grey-darker">Managing your [Viber Service Message](https://developer.nexmo.com/messages/concepts/viber) account</p>
+
+    </div>
+  </div>
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+  </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="GetVSMAccount">Retrieve a Viber Service Message account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/viber_service_msg/<span class="api-path-parameter">:external_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to retrieve. In this case it will be your Viber Service Message ID.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-GetVSMAccount">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-GetVSMAccount-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetVSMAccount-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetVSMAccount-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetVSMAccount-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetVSMAccount-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be <code>viber_service_msg</code>).</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optionalName"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"optionalApplicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"viber_service_msg"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+          <div class="Vlt-grid  Nxd-api--noborder Vlt-article--reverse">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h1 id="whatsapp" class="Vlt-grey-dark">Whatsapp</h1>
+      <p class="Vlt-grey-darker">Managing your [Whatsapp](https://developer.nexmo.com/messages/concepts/whatsapp) account</p>
+
+    </div>
+  </div>
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+  </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="GetWAAccount">Retrieve a Whatsapp account</h3>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/beta/chatapp-accounts</span>/whatsapp/<span class="api-path-parameter">:external_id</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+            <p>This API supports both JWT and Basic authentication. Basic authentication is easier to get started with, but does not support advanced features such as ACLs.</p>
+
+            <p>You can use <em>either</em> JWT or Basic authentication, but not both at the same time.</p>
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                  <b>Base64 encoded API key and secret joined by a colon.</b><br>
+                  <small><a href="/concepts/guides/authentication#header-based-api-key-and-secret-authentication">Read more</a></small>
+                </td>
+                <td><code>Basic &lt;base64&gt;</code></td>
+                <td>
+                  <i>None</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>external_id</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>External id of the account you want to retrieve. In this case it will be the WhatsApp number.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-GetWAAccount">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-GetWAAccount-name">
+          <b>name</b>
+      </td>
+    <td>
+    <p>The account name</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetWAAccount-applications">
+          <b>applications</b>
+              <br />
+              <small>array of strings</small>
+      </td>
+    <td>
+    <p>The array of associated application ids</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetWAAccount-external_id">
+          <b>external_id</b>
+      </td>
+    <td>
+    <p>The external identifier for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetWAAccount-api_key">
+          <b>api_key</b>
+      </td>
+    <td>
+    <p>The external api key for this account</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-GetWAAccount-provider">
+          <b>provider</b>
+      </td>
+    <td>
+    <p>The provider (will be <code>whatsapp</code>).</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optionalName"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"optionalApplicationId"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"api_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abcd1234"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"whatsapp"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">401</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unauthorised"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request header 'Authorization' missing / Invalid Token"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger ">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--red">404</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content ">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--<footer id="footer">
+  <div class="container">
+    <div>
+      <h5>Documentation</h5>
+      <a href="/messaging/sms/overview">SMS</a>
+      <a href="/voice/voice-api/overview">Voice</a>
+      <a href="/verify/overview">Verify</a>
+      <a href="/number-insight/overview">Number Insight</a>
+      <a href="/account/overview">Account</a>
+    </div>
+
+    <div>
+      <h5>API Reference</h5>
+      <a href="/api/sms">SMS</a>
+      <a href="/api/voice">Voice</a>
+      <a href="/api/verify">Verify</a>
+      <a href="/api/number-insight">Number Insight</a>
+      <a href="/api#developer-api">Developer API</a>
+      <a href="/api#global-apis">Global APIs</a>
+    </div>
+
+    <div>
+      <h5>Nexmo Developer</h5>
+      <a href="/community">Community</a>
+      <a href="/contribute">Contribute</a>
+      <a href="/legacy">Legacy Documentation</a>
+      <a href="/team">Team</a>
+    </div>
+
+    <div>
+      <h5>Get to know us</h5>
+      <a href="https://www.nexmo.com/platform" target="_blank">Nexmo Platform</a>
+      <a href="https://www.nexmo.com/about-nexmo" target="_blank">About Nexmo</a>
+      <a href="https://www.nexmo.com/careers" target="_blank">Careers</a>
+      <a href="https://www.nexmo.com/leadership" target="_blank">Leadership</a>
+      <a href="https://www.vonage.com/corporate" target="_blank">Press</a>
+    </div>
+
+    <div id="footer-support">
+      <h5>Support</h5>
+      <a href="https://help.nexmo.com" target="_blank">Knowledgebase</a>
+      <a href="https://help.nexmo.com/hc/en-us/sections/115004147507" target="_blank">Known Issues</a>
+    </div>
+
+    <div id="footer-outbound-links">
+      <a href="https://nexmo.com/" id="footer-logo">
+        <img src="/assets/nexmo-vonage-white-04f5e57888fe21adf637c8227d1a03fb8c1d0240b9d136f4b8e8d881db375833.svg" alt="Nexmo vonage white" />
+      </a>
+
+      <a href="https://www.nexmostatus.com/" target="_blank" class="Vlt-badge-combined">
+        <span class="Vlt-badge Vlt-badge--blue">API Status</span><span class="Vlt-badge Vlt-badge--green Nxd-api-status">Loading</span>
+      </a>
+
+      <div id="footer-social-links">
+        <a href="https://www.linkedin.com/company/1345545/" class="footer-link" target="_blank"><i class="icon icon-linkedin"></i></a>
+        <a href="/slack" class="footer-link" target="_blank"><i class="icon icon-slack"></i></a>
+        <a href="https://twitter.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-twitter"></i></a>
+        <a href="https://github.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-github"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/nexmo" class="footer-link" target="_blank"><i class="icon icon-stack-overflow"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+  </div>
+</div>
+
+  </body>
+</html>
+	

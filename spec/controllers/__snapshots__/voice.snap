@@ -1,0 +1,3918 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nexmo Developer</title>
+
+
+
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("abc123");
+      analytics.page();
+      }}();
+    </script>
+
+
+
+
+  <link rel="stylesheet" media="all" href="/assets/application-46768d12c9e58a87299d67f91ed2687e5ddb110ee11b80d488e44d9d0ed101bf.css" />
+  <script src="/assets/application-86729a2cd807fb8af29949b95c5d1a4fb2ad8ea9dae3870ac52a4f3dae2387f6.js" data-turbolinks-track="reload"></script>
+
+
+
+  <script src="/packs-test/application-8006671cb63b3856dd3b.js" defer="defer"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+    <meta name="robots" content="noindex,nofollow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Nexmo Developer">
+  <meta name="application-name" content="Nexmo Developer">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:url" content="http://www.example.com/api/voice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Nexmo Developer" />
+
+  <meta property="og:image" content="http://www.example.com/assets/images/nexmo-developer-card.png" />
+  <meta property="og:image:width" content="835" />
+  <meta property="og:image:height" content="437" />
+
+    <meta property="og:description" content="Everything you need to build connected applications with Nexmo" />
+
+  <meta name="basic_auth_username" content="" />
+  <meta name="basic_auth_password" content="" />
+  <meta name="search_url" content="https://abc123.execute-api.us-east-1.amazonaws.com/latest/search" />
+  <meta name="environment" content="test" />
+
+  <meta name="algolia_application_id" content="" />
+
+
+  <meta name="copyright" content="2019 Nexmo, The Vonage API Platform" />
+
+  
+
+  
+</head>
+
+
+  <body class="Nxd-template" data-push-state-root="/api/voice">
+    
+
+
+<div class="Nxd-header">
+  <header id="header" class="Nxd-header__main">
+    <div class="Nxd-logo">
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-M-plus">
+        <img src="/assets/nexmo-developer-logo-27729a3ab4703a09c7ba309049b7679e795af2d60ce84672ca12bd680f9ef77b.svg" alt="Nexmo developer logo" />
+      </a>
+      <a href="/" id="logo" class="Nxd-logo__image Vlt-S-only">
+        <img src="/assets/nexmo-logo-collapsed-55d46ded8d5a992fbcec4c93b1b6a3ce71dab62e774fa459070345b182a5e814.svg" alt="Nexmo logo collapsed" />
+      </a>
+      <a href="/team#join" class="Vlt-M-plus">
+        <span id="header-hiring" class="Nxd-logo__hiring">We're hiring</span>
+      </a>
+    </div>
+
+    <nav data-turbolinks="false" class="Nxd-header__nav">
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://nexmo.com">Nexmo.com</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://help.nexmo.com/hc/en-us">Support</a>
+      <a class="Nxd-main-header__link Vlt-M-plus" href="https://dashboard.nexmo.com/sign-in">Sign In</a>
+      <a href="https://dashboard.nexmo.com/sign-up" class="Vlt-btn Vlt-btn--secondary"><b>Try it free</b></a>
+    </nav>
+  </header>
+
+  <nav id="subnav" class="Nxd-header__sub" data-turbolinks="false"> 
+    <a id="Vlt-sidenav-mobile-trigger"><svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use></svg></a>
+
+    <div class="Nxd-header__sub__menu">
+      <a href="/documentation" class="Vlt-tabs__link ">Documentation</a>
+      <a href="/tutorials" class="Vlt-tabs__link ">Tutorials</a>
+      <a href="/api" class="Vlt-tabs__link Vlt-tabs__link_active">API Reference</a>
+      <a href="/tools" class="Vlt-tabs__link ">SDKs &amp; Tools</a>
+      <a href="/community" class="Vlt-tabs__link ">Community</a>
+      <a href="/extend" class="Vlt-tabs__link ">Extend</a>
+    </div>
+
+  </nav>
+</div>
+ 	
+    <div id="Vlt-sidenav" class="Vlt-sidenav Vlt-sidenav--light">
+  <div class="Vlt-sidenav__scroll">
+    <ul class="Vlt-sidemenu Vlt-sidemenu--rounded navigation">
+      <li><h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Voice API</h5></li>
+          <li>
+            <a class="Vlt-sidemenu__link" href="#overview">Overview</a>
+          </li>
+
+
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#createCall">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Create an outbound call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--post"><code class="Vlt-white">post</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#getCalls">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Get details of your calls </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#getCall">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Get detail of a specific call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--get"><code class="Vlt-white">get</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#updateCall">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Modify an in progress call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--put"><code class="Vlt-white">put</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#startStream">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Play an audio file into a call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--put"><code class="Vlt-white">put</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#stopStream">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Stop playing an audio file into a call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--delete"><code class="Vlt-white">delete</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#startTalk">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Play text to speech into a call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--put"><code class="Vlt-white">put</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#stopTalk">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Stop text to speech in a call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--delete"><code class="Vlt-white">delete</code></span>
+</a>                  </li>
+                  <li>
+                    <a class="Vlt-sidemenu__link" href="#startDTMF">
+                      <svg class="Vlt-green"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-code" /></svg>
+
+                      <span class="Vlt-sidemenu__label">Play DTMF tones into a call </span><span class="Vlt-badge Vlt-badge--margin-left Nxd-method-badge Nxd-method-badge--put"><code class="Vlt-white">put</code></span>
+</a>                  </li>
+
+
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="Vlt-main Vlt-main--light Nxd-main" tabindex="2">
+  <div class="Vlt-card Vlt-article Nxd-api">
+    <div id="overview" class="Vlt-grid">
+      <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+        <div>
+          <h1>
+            Voice API
+          </h1>
+
+            <p><p>The Voice API lets you create outboud calls, control in progress calls and get information about historical calls.</p>
+</p>
+
+          <a class="Vlt-btn Vlt-btn--secondary Vlt-btn--app" href="/api/voice.yml">
+            <svg><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-download" /></svg>
+            Download OpenAPI 3 Definition
+</a>
+        </div>
+      </div>
+      <div class="Vlt-col Vlt-col--1of3 Nxd-api__code Nxd-api__code--install">
+
+      </div>
+    </div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="createCall">Create an outbound call</h3>
+        <p><p>Create an outbound Call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--post">POST</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>to</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | array
+                  <br>
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+
+              <div style="margin-left: 20px;">
+                <h4>Any one of the following:</h4>
+                  <h5>Connect to a Phone (PSTN) number</h5>
+                  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The type of connection. Must be <code>phone</code></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>phone</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>phone</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>number</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The phone number to connect to</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>14155550100</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>dtmfAnswer</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Provide <a href="https://developer.nexmo.com/voice/voice-api/guides/dtmf">DTMF digits</a> to send when the call is answered</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>p*123#</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+                  <h5>Connect to a SIP Endpoint</h5>
+                  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The type of connection. Must be <code>sip</code></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>sip</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>sip</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uri</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The SIP URI to connect to</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>rebekka@sip.example.com</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+                  <h5>Connect to a Websocket</h5>
+                  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The type of connection. Must be <code>websocket</code></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>websocket</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>websocket</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uri</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><i>None</i></p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>wss://example.com/socket</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>content-type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><i>None</i></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>audio/l16;rate=8000</code> or <code>audio/l16;rate=16000</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>audio/l16;rate=16000</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>headers</b><br>
+            <small>
+
+
+              <i>
+                 object
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+                
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>customer_id</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>This is an example header. You can provide any headers you may need</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>ABC123</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+          </td>
+        </tr>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+              </div>
+          </td>
+        </tr>
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>from</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | object
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+                
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The type of connection. Must be <code>phone</code></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>phone</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>phone</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>number</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The phone number to connect to</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>14155550100</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>dtmfAnswer</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Provide <a href="https://developer.nexmo.com/voice/voice-api/guides/dtmf">DTMF digits</a> to send when the call is answered</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>p*123#</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+          </td>
+        </tr>
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>answer_url</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+                <p>The webhook endpoint where you provide the Nexmo Call Control Object that governs this call.</p>
+
+
+
+
+          </td>
+
+                <!-- Just for spacing -->
+                <td></td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>answer_method</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The HTTP method used to send event information to answer_url.</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>POST</code> or <code>GET</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>GET</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>event_url</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+                <p>The webhook endpoint where call progress events are sent to. For more information about the values sent, see callback</p>
+
+
+
+
+          </td>
+
+                <!-- Just for spacing -->
+                <td></td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>event_method</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The HTTP method used to send event information to event_url.</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>POST</code> or <code>GET</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>POST</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>machine_detection</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Configure the behavior when Nexmo detects that the call is answered by voicemail. If Continue Nexmo sends an HTTP request to event_url with the Call event machine. hangup  end the call</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>continue</code> or <code>hangup</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>continue</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>length_timer</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Set the number of seconds that elapse before Nexmo hangs up after the call state changes to in_progress.</p>
+
+
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                    Must be between <code>1</code> and <code>7200</code>
+              </small>
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>7200</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>ringing_timer</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Set the number of seconds that elapse before Nexmo hangs up after the call state changes to ‘ringing’.</p>
+
+
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                    Must be between <code>1</code> and <code>120</code>
+              </small>
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>60</code>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-createCall">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-createCall-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-createCall-status">
+          <b>status</b>
+      </td>
+    <td>
+    <p>The status of the call. <a href="https://developer.nexmo.com/voice/voice-api/guides/call-flow#event-objects">See possible values</a></p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-createCall-direction">
+          <b>direction</b>
+      </td>
+    <td>
+    <p>Possible values are <code>outbound</code> or <code>inbound</code></p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>outbound</code> or <code>inbound</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-createCall-conversation_uuid">
+          <b>conversation_uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for the conversation this call leg is part of.</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">201</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"started"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"direction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"outbound"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"conversation_uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CON-f972836a-550f-45fa-956c-12a2ab5b7d22"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="getCalls">Get details of your calls</h3>
+        <p><p>Get details of your calls</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+
+  <h4>Query Parameter</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>status</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Filter by call status</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>started</code>, <code>ringing</code>, <code>answered</code>, <code>machine</code>, <code>completed</code>, <code>busy</code>, <code>cancelled</code>, <code>failed</code>, <code>rejected</code>, <code>timeout</code> or <code>unanswered</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>started</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>date_start</b><br>
+            <small>
+
+
+              <i>
+                 string
+                  | (date-time)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return the records that occurred after this point in time</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2016-11-14 07:45:14 UTC</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>date_end</b><br>
+            <small>
+
+
+              <i>
+                 string
+                  | (date-time)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return the records that occurred before this point in time</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>2016-11-14 07:45:14 UTC</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>page_size</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return this amount of records in the response</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>10</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>record_index</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return calls from this index in the response</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>0</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>order</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Either ascending or  descending order.</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>asc</code> or <code>desc</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>asc</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>conversation_uuid</b><br>
+            <small>
+
+
+              <i>
+                 string
+                  | (uuid)
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Return all the records associated with a specific conversation.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>CON-f972836a-550f-45fa-956c-12a2ab5b7d22</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-getCalls">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-getCalls-count">
+          <b>count</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-page_size">
+          <b>page_size</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-record_index">
+          <b>record_index</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr class=" Vlt-table__row--noline" >
+      <td id="response-getCalls-_embedded">
+          <b>_embedded</b>
+      </td>
+    <td>
+    <p>A list of call objects. See the <a href="#getCall">get details of a specific call</a> response fields for a description of the nested objects</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCalls-_embedded-calls">
+          <b>calls</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCalls-_embedded-calls-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-conversation_uuid">
+          <b>conversation_uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for the conversation this call leg is part of.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-to">
+          <b>to</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    <p>The single or mixed collection of endpoint types you connected to</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCalls-_embedded-calls-to-type">
+          <b>type</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-to-number">
+          <b>number</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-from">
+          <b>from</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    <p>The endpoint you called from. Possible values are the same as <code>to</code>.</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCalls-_embedded-calls-from-type">
+          <b>type</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-from-number">
+          <b>number</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-status">
+          <b>status</b>
+      </td>
+    <td>
+    <p>The status of the call. <a href="https://developer.nexmo.com/voice/voice-api/guides/call-flow#event-objects">See possible values</a></p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-direction">
+          <b>direction</b>
+      </td>
+    <td>
+    <p>Possible values are <code>outbound</code> or <code>inbound</code></p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>outbound</code> or <code>inbound</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-rate">
+          <b>rate</b>
+      </td>
+    <td>
+    <p>The price per minute for this call. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-price">
+          <b>price</b>
+      </td>
+    <td>
+    <p>The total price charged for this call. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-duration">
+          <b>duration</b>
+      </td>
+    <td>
+    <p>The time elapsed for the call to take place in seconds. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-start_time">
+          <b>start_time</b>
+      </td>
+    <td>
+    <p>The time the call started in the following format: <code>YYYY-MM-DD HH:MM:SS</code>. For example, <code>2020-01-01 12:00:00</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-end_time">
+          <b>end_time</b>
+      </td>
+    <td>
+    <p>The time the call started in the following format: <code>YYYY-MM-DD HH:MM:SS</code>. For xample, <code>2020-01-01 12:00:00</code>. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCalls-_embedded-calls-network">
+          <b>network</b>
+      </td>
+    <td>
+    <p>The Mobile Country Code Mobile Network Code (<a href="https://en.wikipedia.org/wiki/Mobile_country_code">MCCMNC</a>) for the carrier network used to make this call.</p>
+
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"page_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"record_index"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/calls?page_size=10&amp;record_index=20&amp;order=asc"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"_embedded"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"calls"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/calls/63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"conversation_uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CON-f972836a-550f-45fa-956c-12a2ab5b7d22"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900000"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900001"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"started"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"direction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"outbound"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.39"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23.40"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01 12:00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01 12:00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65512"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="getCall">Get detail of a specific call</h3>
+        <p><p>Get detail of a specific call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--get">GET</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-getCall">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-getCall-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-conversation_uuid">
+          <b>conversation_uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for the conversation this call leg is part of.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-to">
+          <b>to</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    <p>The single or mixed collection of endpoint types you connected to</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCall-to-type">
+          <b>type</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-to-number">
+          <b>number</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-from">
+          <b>from</b>
+              <br />
+              <small>array of objects</small>
+      </td>
+    <td>
+    <p>The endpoint you called from. Possible values are the same as <code>to</code>.</p>
+
+
+        </td></tr>
+        <tr class="Vlt-table__row--nohighlight">
+        <td colspan="2">
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+        <table>
+          <thead>
+          <tr>
+            <th>Field</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          
+  <tr>
+      <td id="response-getCall-from-type">
+          <b>type</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-from-number">
+          <b>number</b>
+      </td>
+    <td>
+    
+
+    </td>
+  </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-status">
+          <b>status</b>
+      </td>
+    <td>
+    <p>The status of the call. <a href="https://developer.nexmo.com/voice/voice-api/guides/call-flow#event-objects">See possible values</a></p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-direction">
+          <b>direction</b>
+      </td>
+    <td>
+    <p>Possible values are <code>outbound</code> or <code>inbound</code></p>
+
+       <small class="Vlt-grey-dark">
+          One of: <code>outbound</code> or <code>inbound</code>
+        </small>
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-rate">
+          <b>rate</b>
+      </td>
+    <td>
+    <p>The price per minute for this call. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-price">
+          <b>price</b>
+      </td>
+    <td>
+    <p>The total price charged for this call. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-duration">
+          <b>duration</b>
+      </td>
+    <td>
+    <p>The time elapsed for the call to take place in seconds. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-start_time">
+          <b>start_time</b>
+      </td>
+    <td>
+    <p>The time the call started in the following format: <code>YYYY-MM-DD HH:MM:SS</code>. For example, <code>2020-01-01 12:00:00</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-end_time">
+          <b>end_time</b>
+      </td>
+    <td>
+    <p>The time the call started in the following format: <code>YYYY-MM-DD HH:MM:SS</code>. For xample, <code>2020-01-01 12:00:00</code>. This is only sent if <code>status</code> is <code>completed</code>.</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-getCall-network">
+          <b>network</b>
+      </td>
+    <td>
+    <p>The Mobile Country Code Mobile Network Code (<a href="https://en.wikipedia.org/wiki/Mobile_country_code">MCCMNC</a>) for the carrier network used to make this call.</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/calls?page_size=10&amp;record_index=20&amp;order=asc"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"conversation_uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CON-f972836a-550f-45fa-956c-12a2ab5b7d22"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900000"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"447700900001"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"started"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"direction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"outbound"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.39"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23.40"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01 12:00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01 12:00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65512"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="updateCall">Modify an in progress call</h3>
+        <p><p>Modify an in progress call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--put">PUT</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>action</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><i>None</i></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>hangup</code>, <code>mute</code>, <code>unmute</code>, <code>earmuff</code>, <code>unearmuff</code> or <code>transfer</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>mute</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>destination</b><br>
+            <small>
+
+
+              <i>
+                 object
+              </i>
+            </small>
+          </td>
+
+          <td>
+
+
+
+          </td>
+
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+                
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>type</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p><i>None</i></p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>ncco</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <code>ncco</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>url</b><br>
+            <small>
+
+
+              <i>
+                 array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+                <p><i>None</i></p>
+
+
+
+
+          </td>
+
+                <!-- Just for spacing -->
+                <td></td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+          </td>
+        </tr>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+      
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">204</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+          </div>
+        </div>
+
+            <pre class="highlight"><code>No content</code></pre>
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="startStream">Play an audio file into a call</h3>
+        <p><p>Play an audio file into a call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--put">PUT</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>/stream
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class=" Vlt-table__row--noline ">
+          <td class="Vlt-table__cell--nowrap">
+            <b>stream_url</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | array
+                  <br>
+                    of string's
+              </i>
+            </small>
+          </td>
+
+          <td>
+                <p><i>None</i></p>
+
+
+
+
+          </td>
+
+                <!-- Just for spacing -->
+                <td></td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+        <tr class="Vlt-table__row--nohighlight">
+          <td colspan="4">
+          </td>
+        </tr>
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>loop</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>the number of times to play the file, 0 for infinite</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>1</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>level</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>Set the audio level of the stream in the range <code>-1 &gt;= level &lt;= 1</code> with a precision of 0.1. The default value is 0.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0.4</code>
+              </td>
+
+            <td>
+                <code>0</code>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-startStream">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-startStream-message">
+          <b>message</b>
+      </td>
+    <td>
+    <p>Description of the action taken</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-startStream-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stream started"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="stopStream">Stop playing an audio file into a call</h3>
+        <p><p>Stop playing an audio file into a call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--delete">DELETE</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>/stream
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-stopStream">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-stopStream-message">
+          <b>message</b>
+      </td>
+    <td>
+    <p>Description of the action taken</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-stopStream-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stream stopped"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="startTalk">Play text to speech into a call</h3>
+        <p><p>Play text to speech into a call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--put">PUT</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>/talk
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>text</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The text to read</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>Hello. How are you today?</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>voice_name</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The voice &amp; language to use</p>
+
+
+              <br>
+              <small class="Vlt-grey-dark">
+                  Must be one of:
+                  <code>Salli</code>, <code>Joey</code>, <code>Naja</code>, <code>Mads</code>, <code>Marlene</code>, <code>Hans</code>, <code>Nicole</code>, <code>Russell</code>, <code>Amy</code>, <code>Brian</code>, <code>Emma</code>, <code>Geraint</code>, <code>Gwyneth</code>, <code>Raveena</code>, <code>Chipmunk</code>, <code>Eric</code>, <code>Ivy</code>, <code>Jennifer</code>, <code>Justin</code>, <code>Kendra</code>, <code>Kimberly</code>, <code>Conchita</code>, <code>Enrique</code>, <code>Penelope</code>, <code>Miguel</code>, <code>Chantal</code>, <code>Celine</code>, <code>Mathieu</code>, <code>Dora</code>, <code>Karl</code>, <code>Carla</code>, <code>Giorgio</code>, <code>Liv</code>, <code>Lotte</code>, <code>Ruben</code>, <code>Agnieszka</code>, <code>Jacek</code>, <code>Ewa</code>, <code>Jan</code>, <code>Maja</code>, <code>Vitoria</code>, <code>Ricardo</code>, <code>Cristiano</code>, <code>Ines</code>, <code>Carmen</code>, <code>Maxim</code>, <code>Tatyana</code>, <code>Astrid</code>, <code>Filiz</code>, <code>Mizuki</code> or <code>Seoyeon</code>
+              </small>
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>Kimberly</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>loop</b><br>
+            <small>
+
+
+              <i>
+                 integer
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The number of times to repeat the text the file, 0 for infinite</p>
+
+
+
+
+          </td>
+
+              <td>
+                <i>None</i>
+              </td>
+
+            <td>
+                <code>1</code>
+            </td>
+        
+
+
+    </tr>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>level</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The volume level that the speech is played. This can be any value between <code>-1</code> to <code>1</code> in <code>0.1</code> increments, with <code>0</code> being the default.</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>0.4</code>
+              </td>
+
+            <td>
+                <code>0</code>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-startTalk">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-startTalk-message">
+          <b>message</b>
+      </td>
+    <td>
+    <p>Description of the action taken</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-startTalk-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talk started"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="stopTalk">Stop text to speech in a call</h3>
+        <p><p>Stop text to speech in a call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--delete">DELETE</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>/talk
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-stopTalk">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-stopTalk-message">
+          <b>message</b>
+      </td>
+    <td>
+    <p>Description of the action taken</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-stopTalk-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Talk stopped"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="Vlt-grid">
+  <div class="Vlt-col Vlt-col--2of3 Nxd-api__docs">
+    <div>
+      <h3 id="startDTMF">Play DTMF tones into a call</h3>
+        <p><p>Play DTMF tones into a call</p>
+</p>
+
+      <div class="Vlt-badge-combined">
+        <code class="Vlt-badge Vlt-badge--large Nxd-method-badge Nxd-method-badge--put">PUT</code>
+        <code class="Vlt-badge Vlt-badge--large Vlt-badge--grey">
+          <span>https://api.nexmo.com/v1</span>/calls/<span class="api-path-parameter">:uuid</span>/dtmf
+        </code>
+      </div>
+
+        <h4>Authentication</h4>
+
+
+        <div class="Vlt-table Vlt-table--data Vlt-table--bordered">
+          <table>
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <b>Authorization</b>
+                </td>
+                <td>
+                    <b>Your JSON web token.</b><br>
+                    <small><a href="/concepts/guides/authentication#json-web-tokens-jwt">Read more about JWTs</a></small>
+                </td>
+                <td><code>Bearer &lt;JWT&gt;</code></td>
+                <td>
+                    <em>None</em>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      
+  <h4>Path Parameters</h4>
+  
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>uuid</b><br>
+            <small>
+                <span class="flag flag--strong">Required</span>
+
+
+              <i>
+                | string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>UUID of the Call</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>63f61863-4a51-4f6b-86e1-46edebcf9356</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+      <h4>
+        Request body
+        <span class="Vlt-badge Vlt-badge--blue">application/json</span>
+      </h4>
+
+      
+<div class="Vlt-table Vlt-section Vlt-table--data Vlt-table--bordered">
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Description</th>
+          <th>Example</th>
+            <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+          <td class="Vlt-table__cell--nowrap">
+            <b>digits</b><br>
+            <small>
+
+
+              <i>
+                 string
+              </i>
+            </small>
+          </td>
+
+          <td>
+              <p>The digits to send</p>
+
+
+
+
+          </td>
+
+              <td>
+                <code>1713</code>
+              </td>
+
+            <td>
+                <i>None</i>
+            </td>
+        
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <p class="collapsible">
+    <a class="Vlt-js-accordion__trigger Nxd-accordion-button" data-accordion="accabc123-this-is-a-hash">
+        <span class="Vlt-btn Vlt-btn--tertiary Vlt-btn--block">
+            View response field descriptions
+        </span>
+    </a>
+    </p>
+
+    <div id="accabc123-this-is-a-hash" class="Vlt-js-accordion__content ">
+      <h4 id="response-startDTMF">Response Fields</h4>
+        <div class="js-format" data-format="application/json">
+        <div class="Vlt-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        
+  <tr>
+      <td id="response-startDTMF-message">
+          <b>message</b>
+      </td>
+    <td>
+    <p>Description of the action taken</p>
+
+
+    </td>
+  </tr>
+  <tr>
+      <td id="response-startDTMF-uuid">
+          <b>uuid</b>
+      </td>
+    <td>
+    <p>The unique identifier for this call leg. The UUID is created when your call request is accepted by Nexmo. You use the UUID in all requests for individual live calls</p>
+
+
+    </td>
+  </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="Vlt-col Vlt-col--1of3 Nxd-api__code">
+      
+
+
+      <div class="Vlt-accordion">
+        <button tabindex="0" class="Vlt-accordion__trigger Vlt-accordion__trigger_active">
+          <h5 class="Vlt-title--nomargin">HTTP response
+            <span class="Vlt-badge Vlt-badge--green">200</span>
+          </h5>
+        </button>
+
+        <div class="Vlt-accordion__content Vlt-accordion__content_open">
+          <div class="tabs-content" data-tabs-content="abc123-this-is-a-hash">
+
+                <div class="js-format" data-format="application/json">
+                    <pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DTMF sent"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"63f61863-4a51-4f6b-86e1-46edebcf9356"</span><span class="w">
+</span><span class="p">}</span></code></pre>
+
+                </div>
+
+
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--<footer id="footer">
+  <div class="container">
+    <div>
+      <h5>Documentation</h5>
+      <a href="/messaging/sms/overview">SMS</a>
+      <a href="/voice/voice-api/overview">Voice</a>
+      <a href="/verify/overview">Verify</a>
+      <a href="/number-insight/overview">Number Insight</a>
+      <a href="/account/overview">Account</a>
+    </div>
+
+    <div>
+      <h5>API Reference</h5>
+      <a href="/api/sms">SMS</a>
+      <a href="/api/voice">Voice</a>
+      <a href="/api/verify">Verify</a>
+      <a href="/api/number-insight">Number Insight</a>
+      <a href="/api#developer-api">Developer API</a>
+      <a href="/api#global-apis">Global APIs</a>
+    </div>
+
+    <div>
+      <h5>Nexmo Developer</h5>
+      <a href="/community">Community</a>
+      <a href="/contribute">Contribute</a>
+      <a href="/legacy">Legacy Documentation</a>
+      <a href="/team">Team</a>
+    </div>
+
+    <div>
+      <h5>Get to know us</h5>
+      <a href="https://www.nexmo.com/platform" target="_blank">Nexmo Platform</a>
+      <a href="https://www.nexmo.com/about-nexmo" target="_blank">About Nexmo</a>
+      <a href="https://www.nexmo.com/careers" target="_blank">Careers</a>
+      <a href="https://www.nexmo.com/leadership" target="_blank">Leadership</a>
+      <a href="https://www.vonage.com/corporate" target="_blank">Press</a>
+    </div>
+
+    <div id="footer-support">
+      <h5>Support</h5>
+      <a href="https://help.nexmo.com" target="_blank">Knowledgebase</a>
+      <a href="https://help.nexmo.com/hc/en-us/sections/115004147507" target="_blank">Known Issues</a>
+    </div>
+
+    <div id="footer-outbound-links">
+      <a href="https://nexmo.com/" id="footer-logo">
+        <img src="/assets/nexmo-vonage-white-04f5e57888fe21adf637c8227d1a03fb8c1d0240b9d136f4b8e8d881db375833.svg" alt="Nexmo vonage white" />
+      </a>
+
+      <a href="https://www.nexmostatus.com/" target="_blank" class="Vlt-badge-combined">
+        <span class="Vlt-badge Vlt-badge--blue">API Status</span><span class="Vlt-badge Vlt-badge--green Nxd-api-status">Loading</span>
+      </a>
+
+      <div id="footer-social-links">
+        <a href="https://www.linkedin.com/company/1345545/" class="footer-link" target="_blank"><i class="icon icon-linkedin"></i></a>
+        <a href="/slack" class="footer-link" target="_blank"><i class="icon icon-slack"></i></a>
+        <a href="https://twitter.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-twitter"></i></a>
+        <a href="https://github.com/nexmo" class="footer-link" target="_blank"><i class="icon icon-github"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/nexmo" class="footer-link" target="_blank"><i class="icon icon-stack-overflow"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+  </div>
+</div>
+
+  </body>
+</html>
+	
