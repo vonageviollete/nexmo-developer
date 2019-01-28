@@ -87,17 +87,17 @@ RSpec.describe 'Smoke Tests', type: :request do
   end
 
   it 'markdown page contains the expected text' do
-    get '/voice/voice-api/guides/numbers'
+    get '/en/voice/voice-api/guides/numbers'
     expect(response.body).to include('Numbers are a key concept to understand when working with the Nexmo Voice API. The following points should be considered before developing your Nexmo Application.')
   end
 
   it 'markdown page has default code_language' do
-    get '/voice/voice-api/building-blocks/connect-an-inbound-call'
+    get '/en/voice/voice-api/building-blocks/connect-an-inbound-call'
     expect(response.body).to include('li class="tabs-title is-active" data-language="node" data-language-type="languages"')
   end
 
   it 'markdown page respects code_language' do
-    get '/voice/voice-api/building-blocks/connect-an-inbound-call/php'
+    get '/en/voice/voice-api/building-blocks/connect-an-inbound-call/php'
     expect(response.body).to include('li class="tabs-title is-active" data-language="php" data-language-type="languages"')
     expect(response.body).not_to include('li class="tabs-title is-active" data-language="node" data-language-type="languages"')
   end
