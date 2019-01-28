@@ -1,4 +1,6 @@
 class StaticController < ApplicationController
+  before_action :require_language, only: [:documentation]
+
   def default_landing
     # Get URL and split the / to retrieve the landing page name
     yaml_name = request.fullpath.split('/')[1]
@@ -40,7 +42,7 @@ class StaticController < ApplicationController
 
     @namespace_path = "_documentation/#{@product}"
     @namespace_root = '_documentation'
-    @sidenav_root = "#{Rails.root}/_documentation"
+    @sidenav_root = "#{Rails.root}/_documentation/#{language}"
 
     render layout: 'documentation'
   end
@@ -208,5 +210,15 @@ class StaticController < ApplicationController
     end
 
     render layout: 'page'
+  end
+
+  private
+
+  def require_language
+    return redirect_to "#{request.path}/en" unless language
+  end
+
+  def language
+    params[:language]
   end
 end

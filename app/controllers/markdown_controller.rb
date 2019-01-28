@@ -69,8 +69,8 @@ class MarkdownController < ApplicationController
       @sidenav_root = "app/views/#{params[:namespace]}"
     else
       @namespace_path = "_documentation/#{@language}/#{@product}"
-      @namespace_root = '_documentation'
-      @sidenav_root = "#{Rails.root}/_documentation"
+      @namespace_root = "_documentation/#{@language}"
+      @sidenav_root = "#{Rails.root}/_documentation/#{@language}"
     end
   end
 

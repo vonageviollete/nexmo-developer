@@ -48,6 +48,7 @@ module ApplicationHelper
     # Sort top level
     context[:children].sort_by! do |item|
       configuration_identifier = url_to_configuration_identifier(path_to_url(item[:path]))
+      configuration_identifier = configuration_identifier.gsub(/en\./, '')
       options = configuration_identifier.split('.').inject(NAVIGATION_OVERRIDES) { |h, k| h[k] || {} }
 
       sort_array = []
