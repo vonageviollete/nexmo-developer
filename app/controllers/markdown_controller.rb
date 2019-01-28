@@ -3,6 +3,7 @@ class MarkdownController < ApplicationController
   before_action :set_navigation
   before_action :set_product
   before_action :set_document
+  before_action :require_language
   before_action :set_namespace
 
   def show
@@ -38,6 +39,12 @@ class MarkdownController < ApplicationController
   end
 
   private
+
+  def require_language
+    return if params[:language].present?
+    return if params[:namespace].present?
+    redirect_to "/en/#{@product}/#{@document}", status: :moved_permanently
+  end
 
   def set_navigation
     @navigation = :documentation

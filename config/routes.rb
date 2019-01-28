@@ -89,7 +89,10 @@ Rails.application.routes.draw do
 
   get '/*product/api-reference', to: 'markdown#api'
 
-  # Any markdown file
+  # Any markdown file without language
+  get '/:product/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
+
+  # Any markdown file with language
   get '/:language/:product/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
 
   # Contribute pages

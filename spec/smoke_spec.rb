@@ -86,6 +86,11 @@ RSpec.describe 'Smoke Tests', type: :request do
     expect(response.body).to include('This is a test description')
   end
 
+  it 'markdown page without language contains redirect' do
+    get '/voice/voice-api/guides/numbers'
+    expect(response.body).to include('You are being <a href="http://www.example.com/en/voice/voice-api/guides/numbers">redirected</a>')
+  end
+
   it 'markdown page contains the expected text' do
     get '/en/voice/voice-api/guides/numbers'
     expect(response.body).to include('Numbers are a key concept to understand when working with the Nexmo Voice API. The following points should be considered before developing your Nexmo Application.')
