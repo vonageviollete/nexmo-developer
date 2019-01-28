@@ -1,4 +1,5 @@
 class MarkdownController < ApplicationController
+  before_action :set_language
   before_action :set_navigation
   before_action :set_product
   before_action :set_document
@@ -46,6 +47,10 @@ class MarkdownController < ApplicationController
     @product = params[:product]
   end
 
+  def set_language
+    @language = params[:language]
+  end
+
   def set_document
     @document = params[:document]
   end
@@ -56,7 +61,7 @@ class MarkdownController < ApplicationController
       @namespace_root = 'app/views'
       @sidenav_root = "app/views/#{params[:namespace]}"
     else
-      @namespace_path = "_documentation/#{@product}"
+      @namespace_path = "_documentation/#{@language}/#{@product}"
       @namespace_root = '_documentation'
       @sidenav_root = "#{Rails.root}/_documentation"
     end

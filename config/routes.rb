@@ -89,9 +89,11 @@ Rails.application.routes.draw do
 
   get '/*product/api-reference', to: 'markdown#api'
 
-  scope '(:namespace)', namespace: /contribute/, defaults: { namespace: '' } do
-    get '/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
-  end
+  # Any markdown file
+  get '/:language/:product/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
+
+  # Contribute pages
+  get '/:namespace/*document', to: 'markdown#show', constraints: { 'namespace' => 'contribute' }
 
   get '*unmatched_route', to: 'application#not_found'
 
