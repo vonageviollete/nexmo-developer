@@ -38,7 +38,8 @@ class MarkdownPipeline < Banzai::Pipeline
       UnfreezeFilter,
       IconFilter,
       ExternalLinkFilter,
-      TutorialLinkFilter
+      TutorialLinkFilter,
+      LanguageLinkFilter
     )
   end
 end
