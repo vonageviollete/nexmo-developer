@@ -1,6 +1,6 @@
 class DocumentationConstraint
   def self.documentation
-    code_language.merge(product).merge({ 'language' => 'en' })
+    code_language.merge(product).merge(LanguageConstraint.language_route)
   end
 
   def self.code_language_list
