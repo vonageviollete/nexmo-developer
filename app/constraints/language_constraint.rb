@@ -1,6 +1,6 @@
 class LanguageConstraint
   def self.language_route
-    { 'language' => languages.join('|')}
+    { 'language' => languages.join('|') }
   end
 
   def self.languages
