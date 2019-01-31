@@ -120,6 +120,10 @@ module ApplicationHelper
       flatten = FLATTEN_TREES.include? normalised_title(child)
       class_name = (COLLAPSIBLE.include? normalised_title(child)) ? 'js--collapsible' : ''
       configuration_identifier = url_to_configuration_identifier(path_to_url(child[:path]))
+
+      lang_identifier = Regexp.new(LanguageConstraint.languages.join('\.|') + '\.')
+      configuration_identifier = configuration_identifier.gsub(lang_identifier, '')
+
       options = configuration_identifier.split('.').inject(NAVIGATION_OVERRIDES) { |h, k| h[k] || {} }
       # Rails.logger.debug(options)
 
