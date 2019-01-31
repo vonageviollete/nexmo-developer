@@ -9,6 +9,11 @@ RSpec.describe 'Smoke Tests', type: :request do
 
   it '/documentation contains the expected text' do
     get '/documentation'
+    expect(response.body).to include('You are being <a href="http://www.example.com/en/documentation">redirected</a>')
+  end
+
+  it '/en/documentation contains the expected text' do
+    get '/en/documentation'
     expect(response.body).to include('Welcome to the Nexmo Developer Documentation')
   end
 
