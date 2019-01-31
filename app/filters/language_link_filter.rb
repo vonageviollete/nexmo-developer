@@ -3,7 +3,7 @@ class LanguageLinkFilter < Banzai::Filter
     @input = input
 
     document.css('a').each_with_index do |link, _index|
-      link['href'] = "/en#{link['href']}" if link['href']&.start_with?('/')
+      link['href'] = "/#{options[:language]}#{link['href']}" if link['href']&.start_with?('/')
     end
 
     @document.to_html

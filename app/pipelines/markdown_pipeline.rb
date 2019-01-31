@@ -39,7 +39,7 @@ class MarkdownPipeline < Banzai::Pipeline
       IconFilter,
       ExternalLinkFilter,
       TutorialLinkFilter,
-      LanguageLinkFilter
+      LanguageLinkFilter.new(options)
     )
   end
 end
