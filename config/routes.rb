@@ -45,7 +45,7 @@ Rails.application.routes.draw do
     products.include?(request['product']) && includes_language
   }
 
-  get '/documentation(/:language)', to: 'static#documentation', constraints: LanguageConstraint.language_route
+  get '(/:language)/documentation', to: 'static#documentation', constraints: LanguageConstraint.language_route
 
   get '/hansel', to: 'static#podcast'
 

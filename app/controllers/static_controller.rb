@@ -215,7 +215,7 @@ class StaticController < ApplicationController
   private
 
   def require_language
-    return redirect_to "#{request.path}/en" unless language
+    return redirect_to "/en#{request.path}" unless language
   end
 
   def language
