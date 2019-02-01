@@ -54,7 +54,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_language
-    return if request.path.starts_with? "/assets/"
+    return if request.path.starts_with? '/assets/'
     @language = params[:language]
     cookies.permanent[:language] = @language if @language
   end
