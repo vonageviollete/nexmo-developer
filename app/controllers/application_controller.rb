@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   before_action :notices
   before_action :set_code_language
   before_action :set_feedback_author
+  before_action :set_language
 
   def not_found
     redirect = Redirector.find(request)
@@ -18,6 +19,16 @@ class ApplicationController < ActionController::Base
       redirect_to redirect
     else
       NotFoundNotifier.notify(request)
+
+      # Do we have this page available in any other languages?
+      @available_languages = {}
+      # Strip off the current language
+      doc = request.path.gsub(@language, '')
+
+      LanguageConstraint.languages.each do |lang|
+        @available_languages[lang] = doc if File.exist? "#{Rails.root}/_documentation/#{lang}#{doc}.md"
+      end
+
       render 'static/404', status: :not_found, formats: [:html]
     end
   end
@@ -39,6 +50,10 @@ class ApplicationController < ActionController::Base
 
   def set_show_feedback
     @show_feedback = true
+  end
+
+  def set_language
+    @language = params[:language]
   end
 
   def set_code_language

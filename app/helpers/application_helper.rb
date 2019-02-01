@@ -234,4 +234,13 @@ module ApplicationHelper
       c
     end.join(' ')
   end
+
+  def language_name_from_code(code)
+    names = {
+      'en' => 'English',
+    }
+
+    raise "Invalid language: #{code}" unless names[code]
+    names[code]
+  end
 end

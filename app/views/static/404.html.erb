@@ -2,5 +2,13 @@
   <img src="/assets/images/lost.svg" alt="" width="120">
   <br><br>
   <h2>This page can't be found!</h2>
+  <% unless @available_languages.keys.empty? %>
+  <p>
+    This page is available in:
+    <%= @available_languages.map do |lang, doc|
+      "<a href=\"/#{lang}#{doc[1..-1]}\">#{language_name_from_code(lang)}</a>"
+    end.join(' | ').html_safe %>
+  <% end %>
+  </p>
   <p>Click <a href="/">here</a> to go back to the start</p>
 </center>

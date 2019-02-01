@@ -1,5 +1,4 @@
 class MarkdownController < ApplicationController
-  before_action :set_language
   before_action :set_navigation
   before_action :set_product
   before_action :set_document
@@ -53,10 +52,6 @@ class MarkdownController < ApplicationController
 
   def set_product
     @product = params[:product]
-  end
-
-  def set_language
-    @language = params[:language]
   end
 
   def set_document
