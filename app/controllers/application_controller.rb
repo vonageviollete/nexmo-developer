@@ -23,7 +23,8 @@ class ApplicationController < ActionController::Base
       # Do we have this page available in any other languages?
       @available_languages = {}
       # Strip off the current language
-      doc = request.path.gsub(@language, '')
+      doc = request.path
+      doc = doc.gsub(@language, '') if @language
 
       LanguageConstraint.languages.each do |lang|
         @available_languages[lang] = doc if File.exist? "#{Rails.root}/_documentation/#{lang}#{doc}.md"
@@ -53,7 +54,9 @@ class ApplicationController < ActionController::Base
   end
 
   def set_language
+    return if request.path.starts_with? "/assets/"
     @language = params[:language]
+    cookies.permanent[:language] = @language if @language
   end
 
   def set_code_language

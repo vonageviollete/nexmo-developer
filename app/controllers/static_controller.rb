@@ -215,10 +215,14 @@ class StaticController < ApplicationController
   private
 
   def require_language
-    return redirect_to "/en#{request.path}" unless language
+    return redirect_to "/#{preferred_language}#{request.path}" unless language
   end
 
   def language
     params[:language]
+  end
+
+  def preferred_language
+    cookies[:language] || LanguageConstraint.default_language
   end
 end

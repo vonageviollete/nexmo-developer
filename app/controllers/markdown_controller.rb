@@ -43,7 +43,11 @@ class MarkdownController < ApplicationController
   def require_language
     return if params[:language].present?
     return if params[:namespace].present?
-    redirect_to "/en/#{@product}/#{@document}", status: :moved_permanently
+    redirect_to "/#{preferred_language}/#{@product}/#{@document}", status: :moved_permanently
+  end
+
+  def preferred_language
+    cookies[:language] || LanguageConstraint.default_language
   end
 
   def set_navigation
