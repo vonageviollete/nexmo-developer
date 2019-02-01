@@ -49,7 +49,6 @@ class Concept
     path.gsub("#{origin}/#{language}/", '')
   end
 
-
   def self.generate_url(path, language)
     '/' + path_without_prefix(path, language).gsub('.md', '')
   end

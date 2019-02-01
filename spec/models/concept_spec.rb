@@ -22,7 +22,7 @@ RSpec.describe Concept, type: :model do
   describe '#by_name' do
     it 'shows a single match' do
       stub_available_concepts
-      expect(Concept.by_name(['voice/voice-api/pstn-update'] , language)).to have(1).items
+      expect(Concept.by_name(['voice/voice-api/pstn-update'], language)).to have(1).items
     end
     it 'shows multiple matches' do
       stub_available_concepts

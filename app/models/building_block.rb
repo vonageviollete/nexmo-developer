@@ -32,9 +32,8 @@ class BuildingBlock
     path.gsub("#{origin}/#{language}/", '')
   end
 
-
   def self.generate_url(path, language)
-    "/" + path_without_prefix(path, language).gsub('.md', '')
+    '/' + path_without_prefix(path, language).gsub('.md', '')
   end
 
   def self.extract_product(path, language)
@@ -47,7 +46,7 @@ class BuildingBlock
     path
   end
 
-  def self.extract_category(path, language)
+  def self.extract_category(path, _language)
     # Each file is in the form building-blocks/<title>.md, so let's capture everything after building-blocks
     path = path.gsub(%r{.*/building-blocks/(.*)\.md$}, '\1')
 
