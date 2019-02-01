@@ -70,7 +70,7 @@ module ApplicationHelper
   end
 
   def path_to_url(path)
-    path.gsub(/.*#{Rails.root}\/_documentation/, '').gsub('.md', '')
+    path.gsub(%r{.*#{Rails.root}/_documentation}, '').gsub('.md', '')
   end
 
   def url_to_configuration_identifier(url)
