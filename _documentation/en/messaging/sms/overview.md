@@ -1,6 +1,7 @@
 ---
 title: Overview
 meta_title: Send and receive SMS with the SMS API
+translated_languages: ['jp']
 ---
 
 # SMS API

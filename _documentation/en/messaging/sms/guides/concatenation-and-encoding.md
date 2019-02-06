@@ -2,6 +2,7 @@
 title: Concatenation and encoding
 description: Determining whether the byte length of a message results in it being sent as multiple SMS.
 navigation_weight: 2
+translated_languages: ['jp']
 ---
 
 # Concatenation and Encoding
@@ -37,19 +38,23 @@ Specify the encoding by setting the `type` parameter in the request. The encodin
 
 Nexmo supports all the standard GSM characters as well as characters from the GSM extended table. Characters from the standard table require 7-bits per character to encode:
 
-````
+§§§
+```
 ! " # $ % ' ( ) * + , - . / : ; < = > ? @ _ ¡ £ ¥ § ¿ & ¤
 0 1 2 3 4 5 6 7 8 9
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 Ä Å Æ Ç É Ñ Ø ø Ü ß Ö à ä å æ è é ì ñ ò ö ù ü Δ Φ Γ Λ Ω Π Ψ Σ Θ Ξ
-````
+```
+§§§
 
 Characters from the [extended table](https://en.wikipedia.org/wiki/GSM_03.38#GSM_7-bit_default_alphabet_and_extension_table_of_3GPP_TS_23.038_/_GSM_03.38) require two characters to encode: an `ESC` character prefix followed by the required character from the extended table:
 
-````
+§§§
+```
 | ^ € { } [ ] ~ \
-````
+```
+§§§
 
 ### Unicode
 
@@ -61,9 +66,9 @@ When you set the `type` parameter to `unicode`, **all** characters within the me
 
 | Message | Type | Bytes per character | Total bytes required | Character set used in message |
 |---|---|---|---|---|
-| `Bonjour monde` | `text` | 1 | 13  | GSM standard |
-| `This ^ That` | `text` | 1 (2 for `^` as it's in the extended character set) | 12 | GSM standard and GSM extended |
-| `こんにちは世界` | `unicode` | 2 (UCS-2) | 14 | Unicode |
+| §§§`Bonjour monde`§§§ | `text` | 1 | 13  | GSM standard |
+| §§§`This ^ That`§§§ | `text` | 1 (2 for `^` as it's in the extended character set) | 12 | GSM standard and GSM extended |
+| §§§`こんにちは世界`§§§ | `unicode` | 2 (UCS-2) | 14 | Unicode |
 
 ## Maximum number of characters
 
@@ -101,4 +106,5 @@ However, you can only receive inbound concatenated SMS if the carrier your user 
 See the [Inbound SMS](inbound-sms) concept document for more information about concatenating inbound SMS.
 
 # Further Reading
+
 * [How long is a single SMS body?](https://help.nexmo.com/hc/en-us/articles/204076866-How-long-is-a-single-SMS-body-)

@@ -5,6 +5,7 @@ class MarkdownPipeline < Banzai::Pipeline
     super(
       # As Markdown
       FrontmatterFilter,
+      TranslationExclusionFilter,
       PHPInlinerFilter,
       InlineEscapeFilter,
       BlockEscapeFilter,
@@ -34,7 +35,7 @@ class MarkdownPipeline < Banzai::Pipeline
       UserPersonalizationFilter.new(options),
       HeadingFilter,
       LabelFilter,
-      BreakFilter,
+      #BreakFilter,
       UnfreezeFilter,
       IconFilter,
       ExternalLinkFilter,
