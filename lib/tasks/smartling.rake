@@ -1,4 +1,9 @@
 
+PROJECT_ID = 'fd55d1395'
+
+USER_ID = ''
+USER_SECRET = ''
+smartlingToken = ''
 
 namespace :smartling do
 
