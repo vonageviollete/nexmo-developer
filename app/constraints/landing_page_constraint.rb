@@ -11,6 +11,5 @@ class LandingPageConstraint
     end
 
     { landing_page: Regexp.new(available_pages.join('|')) }
-    { landing_page: 'client-sdk'}
   end
 end
