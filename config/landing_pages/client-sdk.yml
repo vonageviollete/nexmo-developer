@@ -12,7 +12,7 @@ rows:
             text: "Welcome to the Nexmo Client SDK"
             align: center
           subtitle:
-            text: "Prebuilt web, iOS and Android SDKs for all of your Messaging and Voice"
+            text: "Prebuilt web, iOS and Android SDKs for all of your Messaging, Voice and Video needs"
             align: center
             type: large
           icon: 
@@ -21,86 +21,41 @@ rows:
       - type: action_button
         action_button:
           text: "Create a Nexmo account"
-          url: "https://dashboard.nexmo.com/sign-up?utm_source=nexmo_developer"
+          url: "sign-up?#ref=client-sdk"
           type: "primary"
           large: true
           center_button: true
   - columns:
     - entries:
         - type: line_divider
-
   - columns:
     - entries:
-      - type: header
-        header:
-          title:
-            text: "Messaging"
-            align: center
-          icon:
+      - type: call_to_action
+        call_to_action:
+          title: "Messaging"
+          subtitle: "Build a feature-rich chat experience that includes typing indicators and sent, delivered and read receipts."
+          icon: 
             name: "icon-chat"
             color: "blue-dark"
+          url: "#"
     - entries:
-      - type: header
-        header:
-          title:
-            text: "Voice"
-            align: center
-          icon:
+      - type: call_to_action
+        call_to_action:
+          title: "Voice"
+          subtitle: "Nexmo In-App Voice uses WebRTC and includes all the essentials you need to build a feature-rich voice experience."
+          icon: 
             name: "icon-call"
             color: "blue-dark"
-  - columns:
+          url: "#"
     - entries:
       - type: call_to_action
         call_to_action:
-          title: "Build your own messaging platform"
-          subtitle: "Though I'm not sure why you'd want to, we give you<br /> everything you need! Messages, typing indicators, the lot<br /><br />"
-          icon:
-            name: "icon-inbox"
-            color: "red-dark"
-          url: "javascript:alert('Not yet implemented');"
-      - type: call_to_action
-        call_to_action:
-          title: "Build a chatbot"
-          subtitle: "They're all the rage, didn't you hear?<br /><br />"
-          icon:
-            name: "icon-happy"
-            color: "yellow-dark"
-          url: "javascript:alert('Not yet implemented');"
-      - type: call_to_action
-        call_to_action:
-          title: "Customer Support"
-          subtitle: "Support your customers in realtime with IP messaging<br /><br />"
-          icon:
-            name: "icon-user"
-            color: "green-dark"
-          url: "javascript:alert('Not yet implemented');"
-    - entries:
-      - type: call_to_action
-        call_to_action:
-          title: "Phone to Phone"
-          subtitle: "Make calls between two phones, anywhere in the world<br /><br />"
-          icon:
-            name: "icon-call-forward"
-            color: "yellow-dark"
-          url: "javascript:alert('Not yet implemented');"
-      - type: call_to_action
-        call_to_action:
-          title: "Phone to IP"
-          subtitle: "Nexmo In-App Voice uses WebRTC and includes all the essentials<br /> you need to build a feature-rich voice experience.<br /><br />"
-          icon:
-            name: "icon-mobile"
-            color: "green-dark"
-          url: "/task/pstn-to-ip-client-sdk"
-      - type: call_to_action
-        call_to_action:
-          title: "IP to Phone"
-          subtitle: "Nexmo In-App Video uses WebRTC and includes all the essentials you need<br /> to build a feature-rich video experience.<br /><br />"
-          icon:
-            name: "icon-app"
-            color: "red-dark"
-          url: "javascript:alert('Not yet implemented');"
-
-
+          title: "Video"
+          subtitle: "Nexmo In-App Video uses WebRTC and includes all the essentials you need to build a feature-rich video experience."
+          icon: 
+            name: "icon-video"
+            color: "blue-dark"
+          url: "#"
   - columns:
     - entries:
         - type: line_divider
@@ -113,7 +68,78 @@ rows:
   - columns:
     - entries:
         - type: line_divider
+  - columns:
+    - entries:
+        - type: section_header
+          section_header:
+            title: Getting Started
+            icon:
+              name: "icon-flash-2"
+              color: "blue-dark"
+  - columns:
+    - width: 2
+      entries:
+      - type: checklist_item
+        checklist_item:
+          step: 1
+          title: Create a Nexmo account
+          text: |
+              You'll need to [create a Nexmo account](#) before you can do anything else. We give you some free credit when you sign up which is more than enough to get started with.
+      - type: checklist_item
+        checklist_item:
+          step: 2
+          title: Create an application
+          text: |
+              Think of an application as a project. It handles authentication and configuration for your project.
 
+              You can create an application [using the API](/api/application.v2), [using the CLI tool](#), or we 
+              can <a id="landing-create-application" data-name="client-sdk Demo App">do it for you</a> to help you get started
+
+              <div id="CreateApplication"></div>
+      - type: checklist_item
+        checklist_item:
+          step: 3
+          title: Create test users
+          text: |
+              In production you'll need to manage your users using the [Conversation API](#) and one of our server-side libraries.
+
+              For now, you can create some test users [using the Nexmo CLI](#), or we can <a id="landing-create-users">create some for you</a>
+
+              <div id="CreateUsers"></div>
+    - width: 2
+      entries:
+      - type: checklist_item
+        checklist_item:
+          step: 4
+          title: Install the Client SDK
+          text: |
+              We have prebuilt SDKs available for the web, iOS and Android.
+
+              * If you're building for the web we recommend our [Javascript SDK](#)
+              * If you're building on iOS you've got a choice! Choose [Objective C](#) or [Swift](#)
+              * If you're building on Android you can choose between [Java](#) and [Kotlin](#)
+
+      - type: checklist_item
+        checklist_item:
+          step: 5
+          title: Core concepts
+          text: |
+              We recommend reading the [Authentication](#) and [Events](#) topics before getting started
+              with the Client SDKs, then familiarising yourself with concepts such as [Conversations](#),
+              [Users](#) and [Members](#)
+      - type: checklist_item
+        checklist_item:
+          step: 6
+          title: Choose what's next
+          text: |
+              Congratulations, you've completed all of the setup! Now it's time to start building your app.
+
+              You choose where to go next! Get started with [Messaging](#),
+              [Voice](#) or [Video](#)
+
+  - columns:
+    - entries:
+        - type: line_divider
 
   - columns:
     - entries:
@@ -131,7 +157,6 @@ rows:
           text: |
               Push notifications are a key part of your application. Without them, your user won't know when
               their phone is ringing! We make it really easy to integrate push notifications in to your application.
-          url: "javascript:alert('Not implemented');"
     - entries:
       - type: card
         card:
@@ -140,7 +165,6 @@ rows:
               Ever seen those click-to-call buttons on websites and wondered how they work? Follow our Click to Call
               guide and learn how you can build it yourself! Have your phone ring every time someone clicks a button 
               on your website
-          url: "javascript:alert('Not implemented');"
     - entries:
       - type: card
         card:
@@ -148,4 +172,3 @@ rows:
           text: |
               Before a user can participate in a conversation, they need to be invited. You can invite them using
               the server-side library or using the Client SDK
-          url: "javascript:alert('Not implemented');"
