@@ -184,6 +184,27 @@ module ApplicationHelper
       end
     end
 
+    if root && @show_tutorials
+      s << <<~HEREDOC
+        <li class=" navigation-item">
+          <h5 class="Vlt-sidemenu__title Vlt-sidemenu__title--border">Tutorials</h5>
+          <ul class="Vlt-sidemenu__list--compressed">
+      HEREDOC
+
+      Tutorial.by_product(@product).each do |tutorial|
+        s << <<~HEREDOC
+          <li class=" navigation-item--android navigation-item">
+            <a class="Vlt-sidemenu__link" href="/client-sdk/sdk-documentation/android">#{tutorial.title}</a>
+          </li>
+        HEREDOC
+      end
+
+      s << <<~HEREDOC
+          </ul>
+        </li>
+      HEREDOC
+  end
+
     s << '</ul>' unless received_flatten
 
     s.join("\n").html_safe
