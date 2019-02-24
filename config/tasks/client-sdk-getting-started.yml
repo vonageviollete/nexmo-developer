@@ -8,7 +8,6 @@ introduction:
 tasks:
   - create-nexmo-account
   - application/create-rtc
-  - number/link-to-application
   - conversation/create-users
   - client-sdk/install
 

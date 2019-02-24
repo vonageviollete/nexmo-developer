@@ -85,6 +85,9 @@ rows:
           title: Create a Nexmo account
           text: |
               You'll need to [create a Nexmo account](#) before you can do anything else. We give you some free credit when you sign up which is more than enough to get started with.
+          link:
+            text: "Learn More &raquo;"
+            url: "/task/client-sdk-getting-started/create-nexmo-account"
       - type: checklist_item
         checklist_item:
           step: 2
@@ -96,6 +99,9 @@ rows:
               can <a id="landing-create-application" data-name="client-sdk Demo App">do it for you</a> to help you get started
 
               <div id="CreateApplication"></div>
+          link:
+            text: "Learn More &raquo;"
+            url: "/task/client-sdk-getting-started/application--create-rtc"
       - type: checklist_item
         checklist_item:
           step: 3
@@ -106,6 +112,9 @@ rows:
               For now, you can create some test users [using the Nexmo CLI](#), or we can <a id="landing-create-users">create some for you</a>
 
               <div id="CreateUsers"></div>
+          link:
+            text: "Learn More &raquo;"
+            url: "/task/client-sdk-getting-started/conversation--create-users"
     - width: 2
       entries:
       - type: checklist_item
@@ -118,24 +127,19 @@ rows:
               * If you're building for the web we recommend our [Javascript SDK](#)
               * If you're building on iOS you've got a choice! Choose [Objective C](#) or [Swift](#)
               * If you're building on Android you can choose between [Java](#) and [Kotlin](#)
+          link:
+            text: "Learn More &raquo;"
+            url: "/task/client-sdk-getting-started/client-sdk--install"
 
       - type: checklist_item
         checklist_item:
           step: 5
-          title: Core concepts
-          text: |
-              We recommend reading the [Authentication](#) and [Events](#) topics before getting started
-              with the Client SDKs, then familiarising yourself with concepts such as [Conversations](#),
-              [Users](#) and [Members](#)
-      - type: checklist_item
-        checklist_item:
-          step: 6
           title: Choose what's next
           text: |
               Congratulations, you've completed all of the setup! Now it's time to start building your app.
-
-              You choose where to go next! Get started with [Messaging](#),
-              [Voice](#) or [Video](#)
+          link:
+            text: "Choose where to go next &raquo;"
+            url: "/task/client-sdk-getting-started/conclusion"
 
   - columns:
     - entries:

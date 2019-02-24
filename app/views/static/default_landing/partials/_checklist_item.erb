@@ -10,6 +10,9 @@
     <div class="Nxd-checklist__content">
       <h4 class="Vlt-margin--top2"><%= local_assigns['title'] %></h4>
       <p><%= local_assigns['text'].render_markdown %></p>
+      <% if local_assigns['link'] %>
+        <p class="Vlt-margin--top2"><a href="<%= local_assigns['link']['url'] %>"><%= local_assigns['link']['text'].html_safe %></a></p>
+      <% end %>
     </div>
   </div>
 </div>

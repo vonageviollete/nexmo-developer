@@ -66,6 +66,7 @@ class TaskController < ApplicationController
 
     # What's the next link in this task?
     current_task_index = @subtasks.pluck('path').index(@task_step)
+    return not_found unless current_task_index
     @next_task = current_task_index + 1
 
     # How about the previous?
