@@ -91,7 +91,7 @@ Rails.application.routes.draw do
   get '/*product/api-reference', to: 'markdown#api'
 
   scope '(:namespace)', namespace: /contribute/, defaults: { namespace: '' } do
-    get '/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
+    get '/*product/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
   end
 
   get '/:product/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
