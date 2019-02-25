@@ -12,6 +12,7 @@ OPEN_API_PRODUCTS = %w[
   external-accounts
   verify
   application.v2
+  number-pools
 ].freeze
 
 class OpenApiConstraint
