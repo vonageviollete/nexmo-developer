@@ -94,6 +94,11 @@
     width: 25px;
   }
 
+  &:last-child {
+    border: 0;
+    margin-bottom: 0;
+  }
+
   p {
     color: $grey-darker;
   }
