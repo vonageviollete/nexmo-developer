@@ -15,7 +15,7 @@ class StaticController < ApplicationController
       end
     end
 
-    if request.path.gsub('/', '') == 'community'
+    if request.path.delete('/') == 'community'
       @upcoming_events = Event.upcoming
       @past_events_count = Event.past.count
 
