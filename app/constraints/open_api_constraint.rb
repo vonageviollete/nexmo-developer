@@ -1,4 +1,5 @@
 OPEN_API_PRODUCTS = %w[
+  conversion
   sms
   media
   number-insight
