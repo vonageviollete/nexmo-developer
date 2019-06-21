@@ -6,7 +6,7 @@ dependencies:
 code:
     source: .repos/nexmo/nexmo-ruby-code-snippets/account/configure-account.rb
     from_line: 16
-    to_line: 18
+    to_line: 22
 client:
     source: .repos/nexmo/nexmo-ruby-code-snippets/account/configure-account.rb
     from_line: 9
