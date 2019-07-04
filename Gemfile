@@ -29,8 +29,6 @@ gem 'jquery-rails'
 gem 'clipboard-rails'
 # Icons!
 gem 'octicons_helper'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7.0'
 # Use Redis adapter to run Action Cable in production
@@ -157,6 +155,9 @@ gem 'country_select', '~> 4.0'
 # gem 'nexmo-oas-renderer', path: '../nexmo-oas-renderer-sinatra', require: false
 # gem 'nexmo-oas-renderer', github: 'nexmo/nexmo-oas-renderer', require: false
 gem 'nexmo-oas-renderer', '~> 0.2.1', require: false
+
+# A/B Testing
+gem 'split', '~> 3.3.2', require: 'split/dashboard'
 
 group :development, :test do
   gem 'awesome_print'
