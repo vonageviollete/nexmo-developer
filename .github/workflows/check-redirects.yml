@@ -1,0 +1,8 @@
+name: Check Redirects
+on: pull_request
+author: Nexmo
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+runs:
+  using: 'node12'
+  main: 'nexmo/github-actions/ndp-check-redirects/index.js@master'
