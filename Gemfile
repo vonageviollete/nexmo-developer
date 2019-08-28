@@ -163,13 +163,13 @@ group :development, :test do
   gem 'awesome_print'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'fakefs', require: 'fakefs/safe'
   gem 'pry', require: false
   gem 'rawler', git: 'https://github.com/oscardelben/rawler.git', require: false
   gem 'rspec-collection_matchers'
   gem 'rspec-rails', '~> 3.7'
   gem 'rspec-snapshot', '~> 0.1.2'
   gem 'simplecov', require: false
-  gem "fakefs", require: "fakefs/safe"
 end
 
 group :development do
