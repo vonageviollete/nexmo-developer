@@ -12,16 +12,6 @@ action "Create Review App" {
   ]
 }
 
-workflow "on pull request merge, delete the branch" {
-  on = "pull_request"
-  resolves = ["branch cleanup"]
-}
-
-action "branch cleanup" {
-  uses = "jessfraz/branch-cleanup-action@master"
-  secrets = ["GITHUB_TOKEN"]
-}
-
 workflow "append Heroku logs" {
   on = "deployment_status"
   resolves = ["append-heroku-logs"]
@@ -38,7 +28,7 @@ workflow "Check Redirects" {
 }
 
 action "check-redirects" {
-  uses = "nexmo/github-actions/ndp-check-redirects@master"
+  uses = "nexmo/github-actions/ndp-check-redirects@hcl-actions"
   secrets = [
     "GITHUB_TOKEN"
   ]
