@@ -169,6 +169,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'rspec-snapshot', '~> 0.1.2'
   gem 'simplecov', require: false
+  gem "fakefs", require: "fakefs/safe"
 end
 
 group :development do

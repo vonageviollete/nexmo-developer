@@ -1,6 +1,9 @@
 require 'rails_helper'
+require 'fakefs/spec_helpers'
 
 RSpec.describe CodeSnippetsFilter do
+  include FakeFS::SpecHelpers
+
   it 'returns unaltered input if input is not matching' do
     input = 'hello'
 
@@ -14,6 +17,7 @@ RSpec.describe CodeSnippetsFilter do
   it 'creates correct html output with correct input' do
     expect(SecureRandom).to receive(:hex).at_least(:once).and_return('ID123456')
     allow_any_instance_of(CodeSnippetsFilter).to receive(:render_single_snippet).and_return('')
+    FakeFS::FileSystem.clone("#{Rails.root}/_examples/messaging/sms/send-an-sms")
 
     input = <<~HEREDOC
       ```code_snippets
