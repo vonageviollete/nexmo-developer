@@ -24,7 +24,7 @@ RSpec.describe CodeSnippetsFilter do
       source: '_examples/messaging/sms/send-an-sms'
       ```
     HEREDOC
-
+    FakeFS.deactivate!
     expect(described_class.call(input)).to match_snapshot('code_snippets_send_sms_default')
   end
 
