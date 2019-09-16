@@ -6,7 +6,7 @@ dependencies:
 client:
     source: .repos/nexmo/nexmo-dotnet-code-snippets/NexmoDotnetCodeSnippets/Authentication/BasicAuth.cs
     from_line: 17
-    to_line: 19
+    to_line: 21
 code:
     source: .repos/nexmo/nexmo-dotnet-code-snippets/NexmoDotnetCodeSnippets/Senders/SMSSender.cs
     from_line: 27
