@@ -1,0 +1,23 @@
+---
+title: Create and retrieve a report
+description: Gain insights in to your account by creating a report
+products:
+  - reporting
+
+introduction:
+  title: Introduction
+  description: Learn about the Nexmo Reports API
+  content: |
+    # Introduction
+
+    The reports API is an asynchronous API. To generate a report, you should submit a report generation request and wait for it to be processed. API checks whether the format of the request is correct, then puts it in the processing queue, and responds with the link to check the current status of the report. Reports API can also send a callback to notify when the report has been generated.
+
+    N.B. Be advised, even though the Reports API Beta is quite fast and can deal with enormous amounts of data, it may seem to be slow when trying to download data for realtime analytics. Usage of filters can speed up processing considerably.
+
+prerequisites:
+  - create-nexmo-account
+
+tasks:
+  - reporting/create-report
+  - reporting/check-report-status
+  - reporting/download-report
