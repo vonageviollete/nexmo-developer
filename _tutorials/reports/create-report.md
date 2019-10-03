@@ -12,7 +12,9 @@ For example, to view all SMS messages sent from your Nexmo Account in June 2019,
 curl -X POST https://api.nexmo.com/v2/reports/ \
   -u $API_KEY:$API_SECRET \
   -H "Content-Type: application/json" \
-  -d '{"account_id": "$API_KEY","product": "SMS","direction": "outbound","start_date": "2019-06-01T00:00:00+0000","end_date": "2019-06-30T23:59:59+0000"}'
+  -d '{"account_id": "$API_KEY","product": "SMS","direction": "outbound","start_date": "2019-06-01T00:00:00+0000","end_date": "2019-07-01T00:00:00+0000"}'
 ```
+
+> When generating reports with a date range, `start_date` is inclusive, but `end_date` is exclusive. This means that in the above example we would not match any SMS messages sent at 00:00:00
 
 For a full list of available reports, see the [reports API reference](/api/reports)

@@ -25,7 +25,7 @@
 "/audit/api-reference": "/api/audit"
 "/concepts": "/concepts/overview"
 "/concepts/guides/applications": "/application/overview"
-"/api/reporting": "/api/reports"
+"/reports/api-reference": "/api/reports"
 "/contribute/guides/styleguide": "/contribute/guides/markdown-guide"
 "/contribute/guides/write-the-docs": "/contribute/guides/writing-style-guide"
 "/dispatch/api-reference": "/api/dispatch"

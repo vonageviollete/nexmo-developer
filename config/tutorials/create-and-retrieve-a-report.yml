@@ -2,7 +2,7 @@
 title: Create and retrieve a report
 description: Gain insights in to your account by creating a report
 products:
-  - reporting
+  - reports
 
 introduction:
   title: Introduction
@@ -14,10 +14,7 @@ introduction:
 
     N.B. Be advised, even though the Reports API Beta is quite fast and can deal with enormous amounts of data, it may seem to be slow when trying to download data for realtime analytics. Usage of filters can speed up processing considerably.
 
-prerequisites:
-  - create-nexmo-account
-
 tasks:
-  - reporting/create-report
-  - reporting/check-report-status
-  - reporting/download-report
+  - reports/create-report
+  - reports/check-report-status
+  - reports/download-report
