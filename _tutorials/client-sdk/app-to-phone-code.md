@@ -24,22 +24,20 @@ Create an HTML file called `index.html` in your project directory. Add the follo
   </form>
 
   <script>
-
-const USER_JWT = "PASTE YOUR JWT HERE";
-
-const callPhoneForm = document.getElementById("call-phone-form");
-
-new NexmoClient({ debug: true })
-  .login(USER_JWT)
-  .then(app => {
-    callPhoneForm.addEventListener("submit", event => {
-      event.preventDefault();
-      let number = callPhoneForm.children.phonenumber.value;
-      app.callServer(number);
-    });
-  })
-  .catch(console.error);
+    const USER_JWT = "PASTE YOUR JWT HERE";
+    const callPhoneForm = document.getElementById("call-phone-form");
+    new NexmoClient({ debug: true })
+      .login(USER_JWT)
+      .then(app => {
+        callPhoneForm.addEventListener("submit", event => {
+          event.preventDefault();
+          let number = callPhoneForm.children.phonenumber.value;
+          app.callServer(number);
+        });
+      })
+      .catch(console.error);
   </script>
+
 </body>
 
 </html>
