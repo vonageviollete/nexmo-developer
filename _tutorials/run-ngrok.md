@@ -3,7 +3,9 @@ title: How to run Ngrok
 description: How to run Ngrok to test your application locally.
 ---
 
-If you do not already have Ngrok, you can download and install from [their website](https://ngrok.com/download).
+<a name="how-to-run-ngrok"></a>
+
+If you do not already have Ngrok, learn how to get it [ running locally](https://developer.nexmo.com/concepts/guides/webhooks#using-ngrok-for-local-development).
 
 With the application's webhook URLs pointing to Ngrok, Ngrok will redirect the webhooks to your local machine through a secure tunnel for testing purposes.
 
