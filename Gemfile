@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.5'
+ruby '2.5.7'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -138,7 +138,7 @@ gem 'lograge'
 gem 'countries'
 gem 'country_select', '~> 4.0'
 
-gem 'nexmo-oas-renderer', '~> 0.5.5', require: false
+gem 'nexmo-oas-renderer', '~> 0.5.6', require: false
 
 # A/B Testing
 gem 'split', '~> 3.3.2', require: 'split/dashboard'
