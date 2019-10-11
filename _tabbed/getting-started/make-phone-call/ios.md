@@ -93,7 +93,8 @@ The existing implementation for `statusChanged:` is already handling call hangup
 
 ## Handle permissions
 
-For the call to happen, `Audio Permissions` are required. In the `appDelegate` of the sample project, you can find an implementation for the permissions request in `application:didFinishLaunchingWithOptions`.  
+For the call to happen, `Audio Permissions` are required in `info.plist`. 
+In the `appDelegate` of the sample project, you can find an implementation for the permissions request in `application:didFinishLaunchingWithOptions`.  
 
 To read more about the permissions required, [see the setup tutorial](/tutorials/client-sdk-ios-add-sdk-to-your-app#add-permissions).
 
